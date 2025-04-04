@@ -27,6 +27,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```html
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
-## Team
 
+
+## List of the students
+
+- Pavlo Konelskiy
 - Semen Levchenko
