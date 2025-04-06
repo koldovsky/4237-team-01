@@ -37,3 +37,5 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Tetiana Hazzaieva
 - Olga Buhanska
 - Bohdan Butuzov
+- Diana Dubenok
+- Ivan Popov
