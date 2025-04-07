@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beer Pub</title>
-    <link
-      rel="shortcut icon"
-      href="image/beer-tab-logo.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beer Pub</title>
+  <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+  </head>
+
+  <body>
     <header>
-        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.contacts.html"></div>
-        <a href="contacts.html">contacts</a>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.contacts.html"></div>
+      <a href="contacts.html">contacts</a>
     </header>
     <main>
       <!--Tetiana Hazzaieva-->
       <section>
-        <div
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.download-menu.partial.html"
-        ></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.download-menu.partial.html"></div>
       </section>
       <!--End Tetiana Hazzaieva-->
 
+      <!--Olga Balabukh-->
+      <section>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cold.bear.html"></div>
+      </section>
+      <!--End Olga Balabukh-->
+
       <!-- Oleksandr Lazarets -->
       <section>
-        <div
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.every.friday.partial.html"
-        ></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.every.friday.partial.html"></div>
       </section>
       <!-- End Oleksandr Lazarets -->
 
       <!--Semen Levchenko-->
       <section>
-        <div
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.carousel.partial.html"
-        ></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel.partial.html"></div>
       </section>
       <!--End Semen Levchenko-->
       <!--Diana Dubenok-->
       <footer class="footer">
-        <nav class="footer__nav"
-          data-hx-trigger="load" 
-          data-hx-swap="outerHTML"
+        <nav class="footer__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
           data-hx-get="global.footer-nav.partial.html">
         </nav>
       </footer>
       <!-- End Diana Dubenok-->
     </main>
   </body>
+
 </html>
