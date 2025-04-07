@@ -31,6 +31,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 ## List of the students
 
+- Pavlo Krypskyi
 - Pavlo Konelskiy
 - Semen Levchenko
 - Oleksandr Lazarets
@@ -47,3 +48,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Olga Balabukh
 >>>>>>> e78101b083e4445899b0b74db92886bc06c9a32d
 >>>>>>> 170ae386405db1f9963b0112f444a15ac0f245f5
+- Olga Balabukh
