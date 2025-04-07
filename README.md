@@ -31,6 +31,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 ## List of the students
 
+- Pavlo Krypskyi
 - Pavlo Konelskiy
 - Semen Levchenko
 - Oleksandr Lazarets
