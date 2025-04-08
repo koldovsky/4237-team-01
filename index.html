@@ -21,8 +21,8 @@
 
   <body>
     <header>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.contacts.html"></div>
-      <a href="contacts.html">contacts</a>
+      <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
+      <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
     </header>
     <main>
       <!--Tetiana Hazzaieva-->
@@ -33,7 +33,7 @@
 
       <!--Olga Balabukh-->
       <section>
-        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cold.bear.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cold.beer.partial.html"></div>
       </section>
       <!--End Olga Balabukh-->
       
@@ -63,7 +63,17 @@
       </section>
       <!--End Semen Levchenko-->
 
-    <!--Diana Dubenok-->
+      <!--Olga Buhanska-->
+      <section>
+      <div 
+        data-hx-trigger="load" 
+        data-hx-swap="outerHTML" 
+        data-hx-get="index.friday-deal.partial.html">
+      </div>
+    </section>
+      <!--End Olga Buhanska-->
+      
+        <!--Diana Dubenok-->
         <footer class="footer">
           <nav class="footer__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
             data-hx-get="global.footer-nav.partial.html">
