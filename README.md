@@ -44,3 +44,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Olga Balabukh
 - Ivan Budniak
 - Roman Gerasymenko
+- Serhii Kravchenko
