@@ -1,13 +1,20 @@
-.contacts__title-section {
-    margin: auto;
-    background-image: "../image/background-yellow.png";
+.contacts {
+    background-image: var(--background-image-brown);
 
-    .contacts__title {
-        font-size: 40px;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        position: relative;
-        min-width: 320px;
-        font-family: "Open Sans", sans-serif;
+    .contacts__title-section {
+        margin: auto;
+        background-image: var(--background-image-yellow);
+        min-height: 110px;
+
+
+        .contacts__title {
+            font-size: 40px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            position: relative;
+            min-width: 320px;
+            font-family: "Open Sans", sans-serif;
+
+        }
     }
 }

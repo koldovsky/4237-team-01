@@ -11,6 +11,8 @@
 :root {
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
+    --background-image-yellow: url("../image/background-yellow.png");
+    --background-image-brown: url("../image/background-brown.png");
 }
 
 img {
