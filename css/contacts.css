@@ -14,7 +14,33 @@
             position: relative;
             min-width: 320px;
             font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+            text-align: center;
 
         }
     }
+
+    .contacts__label {
+        color: var(--color-on-primary);
+    }
+
+    .contacts__text {
+        color: var(--color-text-grey);
+    }
+
+    .contacts__map-form {
+
+        .contacts__map {
+            margin: auto;
+            display: block;
+            box-sizing: border-box;
+            height: 573px;
+            margin: 0;
+            min-width: 320px;
+
+        }
+
+    }
+
+
 }

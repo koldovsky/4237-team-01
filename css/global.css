@@ -13,6 +13,14 @@
     font-family: "Open Sans", sans-serif;
     --background-image-yellow: url("../image/background-yellow.png");
     --background-image-brown: url("../image/background-brown.png");
+    --color-primary: #FF6B00;
+    --color-on-primary: #FFFFFF;
+    --color-secondary: #F5F5F5;
+    --color-on-secondary: #333333;
+    --color-background: #FFFFFF;
+    --color-text: #333333;
+    --color-text-secondary: #777777;
+    --color-text-grey: #9d9d9dfc;
 }
 
 img {
