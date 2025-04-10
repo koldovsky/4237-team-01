@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius-button);
+    font-size: var(--font-size-button);
+}

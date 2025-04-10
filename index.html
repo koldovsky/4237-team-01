@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beer Pub</title>
   <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css">
   <script src="https://unpkg.com/htmx.org@1.9.10"
     integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
     crossorigin="anonymous"></script>
@@ -21,8 +22,10 @@
 
   <body>
     <header>
-      <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
-      <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
+      <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
+      <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"></div>
     </header>
     <main>
       <!--Tetiana Hazzaieva-->
@@ -36,7 +39,7 @@
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cold.beer.partial.html"></div>
       </section>
       <!--End Olga Balabukh-->
-      
+
       <!--Olga Buhanska-->
       <section>
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.friday-deal.partial.html">
@@ -71,27 +74,22 @@
 
       <!--Olga Buhanska-->
       <section>
-      <div 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
-        data-hx-get="index.friday-deal.partial.html">
-      </div>
-    </section>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.friday-deal.partial.html">
+        </div>
+      </section>
       <!--End Olga Buhanska-->
 
       <!--Ivan Budniak-->
       <section>
-          <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.best-dishes.partial.html"></div>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.best-dishes.partial.html"></div>
       </section>
-      <!--End Ivan Budniak-->      
-      
-        <!--Diana Dubenok-->
-        <footer
-          class="footer"
-          data-hx-trigger="load" data-hx-swap="outerHTML"
-          data-hx-get="global.footer-nav.partial.html">
-        </footer>
-        <!-- End Diana Dubenok-->
+      <!--End Ivan Budniak-->
+
+      <!--Diana Dubenok-->
+      <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html">
+      </footer>
+      <!-- End Diana Dubenok-->
     </main>
   </body>
 
