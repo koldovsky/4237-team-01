@@ -15,8 +15,8 @@
 :root {
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
-    --background-image-yellow: url("../image/background-yellow.png");
-    --background-image-brown: url("../image/background-brown.png");
+    --background-secondary: url("../image/background-yellow.png");
+    --background-primary: url("../image/background-brown.png");
     --color-primary: #FFC123;
     --color-on-primary: #FFFFFF;
     --color-secondary: #F5F5F5;
@@ -24,10 +24,10 @@
     --color-background: #070403;
     --color-text: #333333;
     --color-text-secondary: #777777;
-    --color-text-grey: #9d9d9dfc;
+    --color-text-body: #9d9d9dfc;
     --color-slider-button: #dba620;
     --color-slider-button-hover: #ffc123;
-    --color-background-black:  #000000;
+    --color-background-secondary:  #000000;
     --teko-font: "Teko", sans-serif;
 }
 
