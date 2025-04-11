@@ -28,7 +28,8 @@
     --color-text-body: #9d9d9dfc;
     --color-slider-button: #dba620;
     --color-slider-button-hover: #ffc123;
-    --color-background-secondary:  #000000;
+    --color-background-secondary: #000000;
+    --color-on-section-description: #CCCCCC;
     --teko-font: "Teko", sans-serif;
     --shadow-into-light-font: "Shadows Into Light", cursive;
     --open-sans-serif-font: "Open Sans", sans-serif;
@@ -50,14 +51,33 @@ button {
 .section-title {
     font-family: var(--shadow-into-light-font);
     font-size: 14px;
+    color: var(--color-primary);
+
+    @media (min-width:768px) {
+        font-size: 21px;
+    }
+
+    @media (min-width:992px) {
+        font-size: 28px;
+    }
 }
 
 .section-header {
     font-family: var(--teko-font);
     font-size: 40px;
+    color: var(--color-on-primary);
+
+    @media (min-width:768px) {
+        font-size: 51px;
+    }
+
+    @media (min-width:992px) {
+        font-size: 62px;
+    }
 }
 
-.section-description{
+.section-description {
     font-family: var(--open-sans-serif-font);
     font-size: 19px;
+    color: var(--color-on-section-description);
 }
