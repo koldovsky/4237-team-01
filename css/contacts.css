@@ -40,6 +40,12 @@
 
         }
 
+        .contacts__form {
+            height: 573px;
+            width: 85%;
+            background-color: var(--color-background-black);
+        }
+
     }
 
 
