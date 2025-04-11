@@ -60,6 +60,10 @@
             }
         }
 
+        .beer-carousel__button--prev{
+            transform: scaleX(-1);
+        }
+
         .beer-carousel__button:hover{
             background-color: var(--color-slider-button-hover);
 
