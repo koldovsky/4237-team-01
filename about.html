@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link
-      rel="shortcut icon"
-      href="image/beer-tab-logo.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-     <!--Anastasiia Horiela -->
-    <header>
-      <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
-      <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML"
-        data-hx-get="about.header-hero.partial.html"></div>
-    </header>
-     <!-- End Anastasiia Horiela-->
-    <main>
-      <!--Pavlo Konelskiy-->
-      <section>
-        <div 
-          data-hx-trigger="load" 
-          data-hx-swap="outerHTML" 
-          data-hx-get="about.about-beer-boutique.html">
-        </div>
-      </section>
-      <!--End Pavlo Konelskiy--> 
-      <!-- Meet Our Team. Ivan Popov -->
-      <section
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="about.meet-our-team.partial.html">
-      </section>
-      <!-- End Ivan Popov -->
-        <!--Diana Dubenok-->
-      <footer
-          class="footer"
-          data-hx-trigger="load" data-hx-swap="outerHTML"
-          data-hx-get="global.footer-nav.partial.html">
-        </footer>
-      <!-- End Diana Dubenok-->
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/global.css">
+  <script src="https://unpkg.com/htmx.org@1.9.10" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <!--Pavlo Konelskiy-->
+    <section>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about.about-beer-boutique.html">
+      </div>
+    </section>
+    <!--End Pavlo Konelskiy-->
+    <!-- Meet Our Team. Ivan Popov -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about.meet-our-team.partial.html">
+    </section>
+    <!-- End Ivan Popov -->
+    <!--Diana Dubenok-->
+    <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-nav.partial.html">
+    </footer>
+    <!-- End Diana Dubenok-->
+  </main>
+</body>
+
 </html>

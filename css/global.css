@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "./global.header-nav.css";
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+
 
 *,
 *::before,
@@ -14,11 +16,11 @@
     font-family: "Open Sans", sans-serif;
     --background-image-yellow: url("../image/background-yellow.png");
     --background-image-brown: url("../image/background-brown.png");
-    --color-primary: #FF6B00;
+    --color-primary: #FFC123;
     --color-on-primary: #FFFFFF;
     --color-secondary: #F5F5F5;
     --color-on-secondary: #333333;
-    --color-background: #FFFFFF;
+    --color-background: #070403;
     --color-text: #333333;
     --color-text-secondary: #777777;
     --color-text-grey: #9d9d9dfc;
