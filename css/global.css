@@ -31,6 +31,7 @@
     --color-background-secondary:  #000000;
     --teko-font: "Teko", sans-serif;
     --shadow-into-light-font: "Shadows Into Light", cursive;
+    --open-sans-serif-font: "Open Sans", sans-serif;
 }
 
 img {
@@ -44,4 +45,19 @@ button {
     padding: var(--button-padding);
     border-radius: var(--border-radius-button);
     font-size: var(--font-size-button);
+}
+
+.section-title {
+    font-family: var(--shadow-into-light-font);
+    font-size: 14px;
+}
+
+.section-header {
+    font-family: var(--teko-font);
+    font-size: 40px;
+}
+
+.section-description{
+    font-family: var(--open-sans-serif-font);
+    font-size: 19px;
 }
