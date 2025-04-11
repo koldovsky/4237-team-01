@@ -1,4 +1,7 @@
-.offer{
+.offer {
     background-color: black;
     color: var(--color-on-primary);
 }
+.offer__subtitle {
+    color: var(--color-primary);
+} 
