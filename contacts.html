@@ -17,9 +17,17 @@
 </head>
 
 <body>
-    <header class="header">
+     <!--Anastasiia Horiela-->
+    <header>
+        <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
+        <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML"
+          data-hx-get="contacts.header-hero.partial.html"></div>
+      </header>
+     <!-- End Anastasiia Horiela-->
+    <!-- <header class="header">
         <a class="header__logo" href="index.html">beer beerboutique</a>
-    </header>
+    </header> -->
     <main class="contacts">
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.header.partial.html"></div>
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.info.partial.html"></div>
