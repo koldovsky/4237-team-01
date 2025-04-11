@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Page</title>
-    <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
 
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Anastasiia Horiela-->
+  <header>
+    <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
+    <div class="header__hero" data-hx-trigger="load" data-hx-swap="outerHTML"
+      data-hx-get="menu.header-hero.partial.html"></div>
+  </header>
+  <!-- End Anastasiia Horiela-->
+  <main>
     <!--Butuzov Bohdan-->
-        <section>
-            <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="menu.bar-menu.partial.html"></div>
-        </section>
+    <section>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="menu.bar-menu.partial.html"></div>
+    </section>
     <!--End Butuzov Bohdan-->
 
-            
-        <!-- Anastasiia Horiela -->
-        <section>
-            
-        </section>
-        <!-- End Anastasiia Horiela -->
-        <!-- Tetiana Hazzaieva -->
-       <section>
-            <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="menu.food-menu.partial.html"></div>
-        </section>
-        <!-- End Tetiana Hazzaieva -->
 
-        <!-- Roman Gerasymenko -->
-        <section>
-            <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get=" menu.vegan-menu.partial.html"></div>
-        </section>
+    <!-- Anastasiia Horiela -->
+    <section>
+
+    </section>
+    <!-- End Anastasiia Horiela -->
+    <!-- Tetiana Hazzaieva -->
+    <section>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="menu.food-menu.partial.html"></div>
+    </section>
+    <!-- End Tetiana Hazzaieva -->
+
+    <!-- Roman Gerasymenko -->
+    <section>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get=" menu.vegan-menu.partial.html"></div>
+    </section>
     <!-- End Roman Gerasymenko -->
-   
-    </main>
-     <!--Diana Dubenok-->
-       <footer
-          class="footer"
-          data-hx-trigger="load" data-hx-swap="outerHTML"
-          data-hx-get="global.footer-nav.partial.html">
-        </footer>
-      <!-- End Diana Dubenok-->
+
+  </main>
+  <!--Diana Dubenok-->
+  <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-nav.partial.html">
+  </footer>
+  <!-- End Diana Dubenok-->
 </body>
+
 </html>

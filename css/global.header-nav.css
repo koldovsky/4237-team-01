@@ -1,0 +1,61 @@
+ .container__fliet {
+     background-color: #111111;
+ }
+
+ .container__header {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .header__nav {
+     padding: 40px 0px;
+     background-color: #111111;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 35px;
+ }
+
+ .header__logo {
+     max-width: 199px;
+     height: 41px;
+ }
+
+ .header__burger-menu {
+     display: none;
+ }
+
+ .header__menu {
+     display: flex;
+     gap: 50px;
+ }
+
+ .header__menu-link {
+     color: #cccccc;
+     font-family: "Open Sans", sans-serif;
+     font-size: 16px;
+ }
+
+ .header__contacts {
+     display: flex;
+     gap: 1.5rem;
+ }
+
+ .header__contact-item {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0.25rem;
+ }
+
+ .header__contact-link:hover {
+    
+ }
+
+ .header__contact-item {
+    
+ }
+
+.header__contact-icon{
+
+}
