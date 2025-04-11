@@ -5,3 +5,6 @@
 .offer__subtitle {
     color: var(--color-primary);
 } 
+.offer__icon {
+    width: 51,26px;
+}
