@@ -52,6 +52,8 @@ button {
     font-family: var(--shadow-into-light-font);
     font-size: 14px;
     color: var(--color-primary);
+    text-align: center;
+    font-weight: 400;
 
     @media (min-width:768px) {
         font-size: 21px;
@@ -66,6 +68,8 @@ button {
     font-family: var(--teko-font);
     font-size: 40px;
     color: var(--color-on-primary);
+    text-align: center;
+    font-weight: 400;
 
     @media (min-width:768px) {
         font-size: 51px;
@@ -80,4 +84,6 @@ button {
     font-family: var(--open-sans-serif-font);
     font-size: 19px;
     color: var(--color-on-section-description);
+    text-align: center;
+    font-weight: 400;
 }

@@ -4,8 +4,9 @@
     justify-content: center;
     margin-top: 90px;
     margin-bottom: 65px;
+    background-image: var(--background-primary);
 
-    @media (min-width:780px) {
+    @media (min-width:768px) {
         margin-top: 105px;
     }
 
@@ -27,7 +28,7 @@
             justify-content: center;
             align-items: center;
 
-            @media (min-width: 780px) {
+            @media (min-width: 768px) {
                 width: 34px;
                 height: 34px;
                 border-radius: 34px;
@@ -41,7 +42,7 @@
                 width: 14px;
                 height: 14px;
 
-                @media (min-width: 780px) {
+                @media (min-width: 768px) {
                     width: 20px;
                     height: 20px;
                 }
@@ -83,28 +84,62 @@
                 flex-direction: column;
                 min-width: 100%;
 
-                @media (min-width: 780px) {
+                @media (min-width: 768px) {
                     flex-direction: row;
                     min-width: 50%;
                 }
 
                 .beer-carousel__card-img-wrap {
                     width: 100%;
-                    max-width: 150px;
+                    max-width: 175px;
                     align-self: center;
 
-                    @media (min-width: 780px) {
+                    @media (min-width: 768px) {
                         max-width: 300px;
+                    }
+
+                    .beer-carousel__card-img {
+                        width: 100%;
+                        height: auto;
                     }
                 }
 
-                .beer-carousel__card-img {
-                    width: 100%;
-                    height: auto;
-                }
+                .beer-carousel__card-description {
+                    padding: 47px 27px;
 
-                .beer-carousel__card-name{
-                    font-family: var(--teko-font);
+                    @media (min-width:768px) {
+                        padding: 58px 28px;
+                    }
+
+                    @media (min-width:992px) {
+                        padding: 80px 30px;
+                    }
+
+                    .beer-carousel__card-name {
+                        font-family: var(--teko-font);
+                        font-size: 38px;
+                        color: var(--color-on-primary);
+
+                        @media (min-width:768px) {
+                            font-size: 46px;
+                        }
+
+                        @media (min-width:992px) {
+                            font-size: 54px;
+                        }
+                    }
+
+                    .beer-carousel__card-recommendation,
+                    .beer-carousel__card-abv,
+                    .beer-carousel__card-ibu,
+                    .beer-carousel__card-flavour {
+                        font-family: var(--open-sans-serif-font);
+                        font-size: 17px;
+                        color: var(--color-text-body);
+                    }
+
+
+
                 }
             }
         }
