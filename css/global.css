@@ -49,6 +49,12 @@ button {
     font-size: var(--font-size-button);
 }
 
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+
 .section-title {
     font-family: var(--shadow-into-light-font);
     font-size: 14px;

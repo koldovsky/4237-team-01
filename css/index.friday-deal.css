@@ -1,0 +1,34 @@
+.friday-deal {
+    background-image: url('image/background-yellow.png');
+    box-sizing: border-box;
+    display: block;
+    width: 272px;
+    min-width: 320px;
+    height: 474px;
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.friday-deal__background {
+    color: black;
+}
+
+.friday-deal__discount-label {
+   text-align: center;
+   color: #444343;
+}
+
+.friday-deal__title {
+    text-align: center;
+}
+
+.friday-deal__description {
+    text-align: center;
+}
+
+.friday-deal__batton {
+    text-align: center;
+}
