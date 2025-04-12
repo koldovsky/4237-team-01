@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./global.css";
 @import "./contacts.css";
+@import "./global.header-nav.css";
 @import "./index.header-hero.css";
 @import "../css/index.beer-carousel.css";
 @import "./about.about-beer-boutique.css";

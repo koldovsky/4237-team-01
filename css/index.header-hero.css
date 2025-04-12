@@ -1,23 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap');
-
 .header__hero {
-    padding-top: 135px 0; 
-    background: url(../image/header/index-hero-background.png) 50% 15.42% / cover no-repeat;
+    padding-top: 135px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.56), rgba(17, 17, 17, 0.56)),
+     url(../image/header/index-hero-background.png) 50% 15.42% / cover no-repeat;
     min-height: 100vh;
+    
 }
 
 .container__hero {
-    
+    margin: auto;
     max-width: 1200px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header__hero-right-class{
+    text-align: center;
+    color: var(--color-on-primary);
+    font-family: var(--font-secondary);
 }
 
 .header__hero-subtitle {
-    text-align: right;
-    font-family: 'Shadows Into Light';
-    color: #ffffff;
+    font-family:'Shadows Into Light';
     font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.header__hero-title{
+    font-family: "Teko", sans-serif;
+    font-size: 128px;
+    max-width: 365px;
+    margin-bottom: 35px;
+}
+
+.header__hero-text{
+    font-family: "Open Sans";
+    font-size: 19px;
+}
+
+.header__hero-button{
+    margin: 50px auto; /* auto для горизонтального центрування блоку */
+    display: block;
+    width: 231px;
+    height: 64.7px;
+    background-color: var(--color-primary);
+    
+    /* Додайте ці стилі для тексту: */
+    text-align: center;
+    line-height: 64.7px; /* = height для вертикального центрування */
+    color: #000000;
+    font-weight: 700;
+    font-family: var(--font-secondary); 
+    font-size: 13.2px; 
+    
+
 }
