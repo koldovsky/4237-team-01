@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap');
 
 .header__hero {
-    padding-top: 135px 0;
-    background: url(../image/header/index-hero-background.png);
-    background-size: 100%; /* заповнює весь простір */
-    background-position: center; /* центрує (можна змінити на "left" або "right") */
-    background-repeat: no-repeat;
-    height: 100vh;
-
-    
+    padding-top: 135px 0; 
+    background: url(../image/header/index-hero-background.png) 50% 15.42% / cover no-repeat;
+    min-height: 100vh;
 }
 
 .container__hero {
+    
     max-width: 1200px;
     display: flex;
     justify-content: flex-end;
