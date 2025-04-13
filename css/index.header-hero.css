@@ -1,7 +1,7 @@
 .header__hero {
     padding-top: 135px 0;
     background: linear-gradient(rgba(17, 17, 17, 0.56), rgba(17, 17, 17, 0.56)),
-     url(../image/header/index-hero-background.png) 50% 15.42% / cover no-repeat;
+     url(../image/header/index-hero-background.png) 50% 20.5% / cover no-repeat;
     min-height: 100vh;
     
 }
@@ -16,6 +16,7 @@
 }
 
 .header__hero-right-class{
+    margin: 0 68px 58px 0;
     text-align: center;
     color: var(--color-on-primary);
     font-family: var(--font-secondary);

@@ -3,7 +3,7 @@
  }
 
  .container__header {
-     max-width: 1200px;
+     max-width: 1170px;
      height: 116px;
      margin: auto;
  }
@@ -15,12 +15,12 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-    
+
  }
 
  .header__logo {
      max-width: 183.9px;
-     height: 36.86px;
+     height: 39.86px;
  }
 
  .header__burger-menu {
@@ -28,8 +28,11 @@
  }
 
  .header__menu {
+     margin: 0 10px 0 0;
+     width: 67.8;
+     font-weight: 400;
      display: flex;
-     gap: 35px;
+     gap: 42px;
  }
 
  .header__menu-link {
@@ -40,24 +43,41 @@
 
  .header__contacts {
      display: flex;
-     gap: 1.5rem;
+     gap: 15px;
  }
 
- .header__contact-item {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 0.25rem;
+ .border_2yy {
+     fill: #FFC123;
  }
 
- .header__contact-link:hover {
-    
+ .border_2yy:hover {
+     fill: #111111;
+
  }
 
- .header__contact-item {
-    
+
+ .logo_2gS {
+     fill: #FFC123;
  }
 
-.header__contact-icon{
+ .logo_2gS:hover {
+     fill: #111111;
 
-}
+ }
+
+ .header__contact-icon:hover {
+     fill: #FFC123;
+     transition: 0.5s;
+ }
+
+ .header__contact-icon:hover .logo_2gS {
+     fill: #111111;
+     transition: 0.5s;
+ }
+
+
+ .header__contact-link:hover {}
+
+ .header__contact-item {}
+
+ .header__contact-icon {}
