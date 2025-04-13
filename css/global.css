@@ -17,6 +17,8 @@
 :root {
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
+    background-image: var(--background-primary);
+    background-size: 100px;
     --background-secondary: url("../image/background-yellow.png");
     --background-primary: url("../image/background-brown.png");
     --color-primary: #FFC123;
@@ -61,6 +63,7 @@ button {
     color: var(--color-primary);
     text-align: center;
     font-weight: 400;
+    margin-bottom: 18px;
 
     @media (min-width:768px) {
         font-size: 21px;
@@ -77,6 +80,7 @@ button {
     color: var(--color-on-primary);
     text-align: center;
     font-weight: 400;
+    margin-bottom: 24px;
 
     @media (min-width:768px) {
         font-size: 51px;
