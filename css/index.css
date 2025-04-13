@@ -3,7 +3,8 @@
 @import "./contacts.css";
 @import "./global.header-nav.css";
 @import "./index.header-hero.css";
-@import "../css/index.beer-carousel.css";
+@import "./index.beer-carousel.css";
+@import "./index.best-offers.css";
 @import "./about.about-beer-boutique.css";
 @import "./index.cold.beer.css";
 @import "./index.friday-deal.css";

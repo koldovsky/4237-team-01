@@ -1,0 +1,65 @@
+.best-offers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 110px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media (min-width: 992px) {
+        padding-bottom: 130px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .best-offers__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .best-offers__card {
+            padding: 0 7.5px;
+            margin-top: 15px;
+
+            @media (min-width: 480px) {
+                padding: 0, 15px;
+                margin-top: 30px;
+            }
+
+            .best-offers__card-img-wrap {
+                position: relative;
+                aspect-ratio: 1;
+                min-width: 150px;
+                max-width: 430px;
+
+                @media (min-width: 992px) {
+                    min-width: 200px;
+                    max-width: 270px;
+                }
+
+                .best-offers__card-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
