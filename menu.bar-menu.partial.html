@@ -6,136 +6,329 @@
             We offer bottled beers by local producers, our own draft beer, and a variety of cocktails.
         </p>
 
-        <div class="bar-menu__columns">
-            <!-- Bottled Beer -->
-            <div class="bar-menu__column">
-                <h3 class="bar-menu__category-title">Bottled Beer</h3>
-                <ul class="bar-menu__list">
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Indian Pale Ale</h4>
-                            <span class="bar-menu__item-price">$4</span>
+        <div id="barMenuCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <!-- Slide 1: Bottled Beer + Beer on Tap -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Bottled Beer -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Bottled Beer</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Indian Pale Ale</h4>
+                                            <span class="bar-menu__item-price">$4</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Strong and bitter beer with intense aroma
+                                        </p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Lager Beer</h4>
+                                            <span class="bar-menu__item-price">$3.50</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">This beer is not bitter at all and
+                                            features wheat aroma</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Bitter</h4>
+                                            <span class="bar-menu__item-price">$4</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">"England's favorite beer", dark and
+                                            intense</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Stout</h4>
+                                            <span class="bar-menu__item-price">$5</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">This frothy beer has a medium strength and
+                                            a pleasant aroma</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Caramel Ale</h4>
+                                            <span class="bar-menu__item-price">$5.50</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Caramel malt sweetness accompanied by
+                                            spicy and citrusy hops</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="bar-menu__item-description">Strong and bitter beer with intense aroma</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Lager Beer</h4>
-                            <span class="bar-menu__item-price">$3.50</span>
+
+                        <!-- Beer on Tap -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Beer on Tap</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Blue Style</h4>
+                                            <span class="bar-menu__item-price">$5</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Brewed with oats and spiced with orange
+                                            peel</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Boutique IPA</h4>
+                                            <span class="bar-menu__item-price">$6</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Our best-selling draft beer with bitter
+                                            taste</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Absolute Porter</h4>
+                                            <span class="bar-menu__item-price">$7</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Chocolate peanut butter porter with rich
+                                            taste</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Belgian Dream</h4>
+                                            <span class="bar-menu__item-price">$8</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">A traditional Belgian-style wheat ale with
+                                            whispers of orange</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Beer Boutique Lager</h4>
+                                            <span class="bar-menu__item-price">$9</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Crisp, clean and slightly dry with some
+                                            residual sweetness</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="bar-menu__item-description">This beer is not bitter at all and features wheat aroma
-                        </p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Bitter</h4>
-                            <span class="bar-menu__item-price">$4</span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Beer on Tap + Cocktails -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Beer on Tap -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Beer on Tap</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Blue Style</h4>
+                                            <span class="bar-menu__item-price">$5</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Brewed with oats and spiced with orange
+                                            peel</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Boutique IPA</h4>
+                                            <span class="bar-menu__item-price">$6</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Our best-selling draft beer with bitter
+                                            taste</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Absolute Porter</h4>
+                                            <span class="bar-menu__item-price">$7</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Chocolate peanut butter porter with rich
+                                            taste</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Belgian Dream</h4>
+                                            <span class="bar-menu__item-price">$8</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">A traditional Belgian-style wheat ale with
+                                            whispers of orange</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Beer Boutique Lager</h4>
+                                            <span class="bar-menu__item-price">$9</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Crisp, clean and slightly dry with some
+                                            residual sweetness</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="bar-menu__item-description">"England's favorite beer", dark and intense</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Stout</h4>
-                            <span class="bar-menu__item-price">$5</span>
+
+                        <!-- Cocktails -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Cocktails</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Monkey Sour</h4>
+                                            <span class="bar-menu__item-price">$10</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Monkey Shoulder whisky, strawberry, lemon,
+                                            sugar</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Old Fashioned</h4>
+                                            <span class="bar-menu__item-price">$11</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Buffalo Trace bourbon, demerara, Angostura
+                                            Bitters</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Pina Colada</h4>
+                                            <span class="bar-menu__item-price">$10</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, coconut,
+                                            pineapple</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Mojito</h4>
+                                            <span class="bar-menu__item-price">$11</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, lime, mint,
+                                            soda</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Bramble</h4>
+                                            <span class="bar-menu__item-price">$13</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Tanqueray London Dry gin, crème de mure,
+                                            lemon</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="bar-menu__item-description">This frothy beer has a medium strength and a pleasant
-                            aroma</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Caramel Ale</h4>
-                            <span class="bar-menu__item-price">$5.50</span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Cocktails + Bottled Beer -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Cocktails -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Cocktails</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Monkey Sour</h4>
+                                            <span class="bar-menu__item-price">$10</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Monkey Shoulder whisky, strawberry, lemon,
+                                            sugar</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Old Fashioned</h4>
+                                            <span class="bar-menu__item-price">$11</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Buffalo Trace bourbon, demerara, Angostura
+                                            Bitters</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Pina Colada</h4>
+                                            <span class="bar-menu__item-price">$10</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, coconut,
+                                            pineapple</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Mojito</h4>
+                                            <span class="bar-menu__item-price">$11</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, lime, mint,
+                                            soda</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Bramble</h4>
+                                            <span class="bar-menu__item-price">$13</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Tanqueray London Dry gin, crème de mure,
+                                            lemon</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="bar-menu__item-description">Caramel malt sweetness accompanied by spicy and citrusy
-                            hops</p>
-                    </li>
-                </ul>
+
+                        <!-- Bottled Beer -->
+                        <div class="col-md-6">
+                            <div class="bar-menu__column">
+                                <h3 class="bar-menu__category-title">Bottled Beer</h3>
+                                <ul class="bar-menu__list">
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Indian Pale Ale</h4>
+                                            <span class="bar-menu__item-price">$4</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Strong and bitter beer with intense aroma
+                                        </p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Lager Beer</h4>
+                                            <span class="bar-menu__item-price">$3.50</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">This beer is not bitter at all and
+                                            features wheat aroma</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Bitter</h4>
+                                            <span class="bar-menu__item-price">$4</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">"England's favorite beer", dark and
+                                            intense</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Stout</h4>
+                                            <span class="bar-menu__item-price">$5</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">This frothy beer has a medium strength and
+                                            a pleasant aroma</p>
+                                    </li>
+                                    <li class="bar-menu__item">
+                                        <div class="bar-menu__item-header">
+                                            <h4 class="bar-menu__item-name">Caramel Ale</h4>
+                                            <span class="bar-menu__item-price">$5.50</span>
+                                        </div>
+                                        <p class="bar-menu__item-description">Caramel malt sweetness accompanied by
+                                            spicy and citrusy hops</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Beer On Tap -->
-            <div class="bar-menu__column">
-                <h3 class="bar-menu__category-title">Beer on Tap</h3>
-                <ul class="bar-menu__list">
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Blue Style</h4>
-                            <span class="bar-menu__item-price">$5</span>
-                        </div>
-                        <p class="bar-menu__item-description">Brewed with oats and spiced with orange peel</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Boutique IPA</h4>
-                            <span class="bar-menu__item-price">$6</span>
-                        </div>
-                        <p class="bar-menu__item-description">Our best-selling draft beer with bitter taste</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Absolute Porter</h4>
-                            <span class="bar-menu__item-price">$7</span>
-                        </div>
-                        <p class="bar-menu__item-description">Chocolate peanut butter porter with rich taste</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Belgian Dream</h4>
-                            <span class="bar-menu__item-price">$8</span>
-                        </div>
-                        <p class="bar-menu__item-description">A traditional Belgian-style wheat ale with whispers of
-                            orange</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Beer Boutique Lager</h4>
-                            <span class="bar-menu__item-price">$9</span>
-                        </div>
-                        <p class="bar-menu__item-description">Crisp, clean and slightly dry with some residual sweetness
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <!-- Cocktails -->
-            <div class="bar-menu__column">
-                <h3 class="bar-menu__category-title">Cocktails</h3>
-                <ul class="bar-menu__list">
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Monkey Sour</h4>
-                            <span class="bar-menu__item-price">$10</span>
-                        </div>
-                        <p class="bar-menu__item-description">Monkey Shoulder whisky, strawberry, lemon, sugar</p>
-                    </li>
-                    <li class="bar-menu_item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Old Fashioned</h4>
-                            <span class="bar-menu__item-price">$11</span>
-                        </div>
-                        <p class="bar-menu__item-description">Buffalo Trace bourbon, demerara, Angostura Bitters</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Pina Colada</h4>
-                            <span class="bar-menu__item-price">$10</span>
-                        </div>
-                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, coconut, pineapple</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Mojito</h4>
-                            <span class="bar-menu__item-price">$11</span>
-                        </div>
-                        <p class="bar-menu__item-description">Havana Club 3 Year Old rum, lime, mint, soda</p>
-                    </li>
-                    <li class="bar-menu__item">
-                        <div class="bar-menu__item-header">
-                            <h4 class="bar-menu__item-name">Bramble</h4>
-                            <span class="bar-menu__item-price">$13</span>
-                        </div>
-                        <p class="bar-menu__item-description">Tanqueray London Dry gin, crème de mure, lemon</p>
-                    </li>
-                </ul>
-            </div>
+            <!-- buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#barMenuCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#barMenuCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
