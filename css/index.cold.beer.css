@@ -1,8 +1,21 @@
-.offer__list {
+.offer {
     background-color:var(--color-background);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 65px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: auto;
+    max-width: 1200px;
+
+    @media (min-width:768px) {
+        padding-top: 105px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
+}
 .section-header-hightlight {
     font-family: var(--teko-font);
     font-size: 40px;
