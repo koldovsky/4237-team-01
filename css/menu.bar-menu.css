@@ -1,0 +1,40 @@
+.bar-menu__subtitle{
+    color: var(--color-primary);
+    font-family: var(--shadow-into-light-font);
+    font-size: 28px;
+}
+.bar-menu__title{
+    color: var(--color-on-primary);
+    font-family: var(--teko-font);
+    font-size: 62px;
+}
+.bar-menu__description{
+    color: var(--color-on-section-description);
+    font-family: var(--open-sans-serif-font);
+    font-size: 19px;
+}
+.bar-menu__category-title{
+    color: var(--color-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
+}
+.bar-menu__item-name{
+    color: var(--color-on-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
+}
+.bar-menu__item-description{
+    color: var(--color-on-section-description);
+    font-family: var(--open-sans-serif-font);
+    font-size: 17px;
+}
+.bar-menu__item-price{
+    color: var(--color-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
+}
+    
+
+.bar-menu{
+    background-color: black;
+}
