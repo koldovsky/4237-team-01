@@ -10,6 +10,21 @@
     
     }
 }
+.section-header-hightlight {
+    font-family: var(--teko-font);
+    font-size: 40px;
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 400;
+
+    @media (min-width:768px) {
+        font-size: 51px;
+    }
+
+    @media (min-width:992px) {
+        font-size: 62px;
+    }
+}
 
 .offer__icon {
     width: 51,26px;
