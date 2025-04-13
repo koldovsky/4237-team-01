@@ -15,7 +15,7 @@
         padding-right: 32px;
     }
 }
-offer__item {
+.offer__item {
     display: flex;
     flex-direction: row;
     align-items: center;
