@@ -1,10 +1,16 @@
 .offer {
     background-color: black;
     color: var(--color-on-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 991px) {
+        flex-direction: row;
+    
+    }
 }
-.offer__subtitle {
-    color: var(--color-primary);
-} 
+
 .offer__icon {
     width: 51,26px;
 }
