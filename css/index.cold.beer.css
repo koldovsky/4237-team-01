@@ -16,6 +16,10 @@
         padding-right: 32px;
     }
 }
+offer__item {
+    display: flex;
+    flex-direction: column;
+}
 .section-header-hightlight {
     font-family: var(--teko-font);
     font-size: 40px;
