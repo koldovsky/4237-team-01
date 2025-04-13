@@ -1,6 +1,5 @@
 .offer {
     background-color: black;
-    color: var(--color-on-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
