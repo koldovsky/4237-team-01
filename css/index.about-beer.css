@@ -1,0 +1,34 @@
+.about-beer {
+	display: flex;
+	background-color: var(--color-background-secondary);
+	height: 700px;
+}
+
+.about-beer__body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+}
+.about-beer__subtitle {
+	color: white;
+}
+.about-beer__title {
+	color: white;
+}
+.about-beer__description {
+	max-width: 500px;
+	color: white;
+}
+.about-beer__link {
+	color: white;
+}
+.about-beer__picture {
+	flex: 1;
+}
+.about-beer__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
