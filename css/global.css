@@ -96,5 +96,6 @@ button {
     font-size: 19px;
     color: var(--color-on-section-description);
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 27px;
 }
