@@ -25,7 +25,33 @@
         font-size: 62px;
     }
 }
+.offer__item-title {
+    font-family: var(--teko-font);
+    font-size: 26px;
+    color: var(--color-on-primary);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
 
-.offer__icon {
-    width: 51,26px;
+    @media (min-width:767px) {
+        font-size: 38px;
+    }
+
+    @media (min-width:768px) {
+        font-size: 32px;
+    }
+}
+.offer__item-text{
+    font-family: var(--open-sans-serif-font);
+    font-size: 17px;
+    color: var(--color-text-body);
+    text-align: center;
+    font-weight: 400;
+}
+.offer__button {
+    background-color: var(--color-primary);
+    color: var(--color-background-secondary);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius-button);
+    font-size: var(--font-size-button);
 }
