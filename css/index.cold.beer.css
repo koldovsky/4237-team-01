@@ -49,9 +49,16 @@
     font-weight: 400;
 }
 .offer__button {
+    margin: 50px auto;
+    display: block;
+    width: 164,08px;
+    height: 55.2px;
     background-color: var(--color-primary);
-    color: var(--color-background-secondary);
-    padding: var(--button-padding);
-    border-radius: var(--border-radius-button);
-    font-size: var(--font-size-button);
-}
+        
+    text-align: center;
+    line-height: 64.7px; /* = height для вертикального центрування */
+    color: #000000;
+    font-weight: 700;
+    font-family: var(--color-background-secondary); 
+    font-size: 12px; 
+    }
