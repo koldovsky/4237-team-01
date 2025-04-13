@@ -1,14 +1,8 @@
-.offer {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media (min-width: 991px) {
-        flex-direction: row;
-    
+.offer__list {
+    background-color:var(--color-background);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-}
 .section-header-hightlight {
     font-family: var(--teko-font);
     font-size: 40px;
