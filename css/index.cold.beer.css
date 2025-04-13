@@ -51,12 +51,12 @@
 .offer__button {
     margin: 50px auto;
     display: block;
-    width: 164,08px;
+    width: 164.08px;
     height: 55.2px;
     background-color: var(--color-primary);
         
     text-align: center;
-    line-height: 64.7px; /* = height для вертикального центрування */
+    line-height: 55.2px;
     color: #000000;
     font-weight: 700;
     font-family: var(--color-background-secondary); 
