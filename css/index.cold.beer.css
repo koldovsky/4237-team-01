@@ -16,6 +16,7 @@
     color: var(--color-primary);
     text-align: center;
     font-weight: 400;
+    text-transform: uppercase;
 
     @media (min-width:768px) {
         font-size: 51px;
