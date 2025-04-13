@@ -1,34 +1,51 @@
-.friday-deal {
-    background-image: url('image/background-yellow.png');
-    box-sizing: border-box;
-    display: block;
-    width: 272px;
-    min-width: 320px;
-    height: 474px;
-    position: relative;
-    padding-top: 65px;
-    padding-bottom: 90px;
-    background-attachment: fixed;
+.section {
+    background-color: var(--background-secondary);
+    width: 320;
+    background-image: url('../image/background-yellow.png');
     background-position: center;
-}
-
-.friday-deal__background {
-    color: black;
+    background-size: cover;
+    border-bottom-color: var(--color-background);
+    min-height: 474px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
 }
 
 .friday-deal__discount-label {
    text-align: center;
-   color: #444343;
+   font-family: var(--shadow-into-light-font);
+   font-size: 14px;
+   color: var(--color-on-secondary);
 }
 
 .friday-deal__title {
     text-align: center;
+    text-transform: uppercase;
+    font-family: var(--teko-font);
+    font-size: 62px;
+    color: var(--color-background);
 }
 
 .friday-deal__description {
     text-align: center;
+    font-family: var(--open-sans-serif-font);
+    font-size: 19px;
+    color: var(--color-on-secondary);
 }
 
-.friday-deal__batton {
+.friday-deal__button {
+    background-color: var(--color-on-secondary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 40px;
+    font-family: var(--open-sans-serif-font);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
+    color: var(--color-on-primary);
 }
