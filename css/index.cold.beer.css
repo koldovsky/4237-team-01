@@ -54,6 +54,7 @@
     height: 28.59px;
 }
 .offer__item-text {
+    text-align: justify;
     width: 187px;
     height: 102px;
 }
