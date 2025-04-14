@@ -1,9 +1,9 @@
 .header__hero {
     padding-top: 135px 0;
     background: linear-gradient(rgba(17, 17, 17, 0.56), rgba(17, 17, 17, 0.56)),
-     url(../image/header/index-hero-background.png) 50% 15.42% / cover no-repeat;
+        url(../image/header/index-hero-background.png) 50% 20.5% / cover no-repeat;
     min-height: 100vh;
-    
+
 }
 
 .container__hero {
@@ -15,44 +15,84 @@
     min-height: 100vh;
 }
 
-.header__hero-right-class{
+.header__hero-right-class {
+    margin: 0 68px 58px 0;
     text-align: center;
     color: var(--color-on-primary);
     font-family: var(--font-secondary);
 }
 
 .header__hero-subtitle {
-    font-family:'Shadows Into Light';
+    font-family: var(--shadow-into-light-font);
     font-size: 28px;
     margin-bottom: 25px;
 }
 
-.header__hero-title{
-    font-family: "Teko", sans-serif;
+.header__hero-title {
+    font-family: var(--teko-font);
     font-size: 128px;
     max-width: 365px;
     margin-bottom: 35px;
 }
 
-.header__hero-text{
-    font-family: "Open Sans";
+.header__hero-text {
+    font-family: var(--open-sans-serif-font);
     font-size: 19px;
 }
 
-.header__hero-button{
-    margin: 50px auto; /* auto для горизонтального центрування блоку */
+.header__hero-button {
+    margin: 50px auto;
+
     display: block;
     width: 231px;
     height: 64.7px;
     background-color: var(--color-primary);
-    
-    /* Додайте ці стилі для тексту: */
+
+
     text-align: center;
-    line-height: 64.7px; /* = height для вертикального центрування */
-    color: #000000;
+    line-height: 64.7px;
+
+    color: var(--color-background-secondary);
     font-weight: 700;
-    font-family: var(--font-secondary); 
-    font-size: 13.2px; 
-    
+    font-family: var(--font-secondary);
+    font-size: 13.2px;
 
 }
+
+@media(width <=767px) {
+    .header__hero-left-class {
+        display: none;
+    }
+
+    .header__hero {
+        background-size: contain;
+        min-height: 100%;
+        padding: 100px 0;
+
+    }
+
+    .container__hero {
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    .header__hero-right-class {
+        margin: 0;
+        align-items: center;
+    }
+
+    .header__hero-subtitle {
+        font-size: 14px;
+    }
+
+    .header__hero-title {
+        font-size: 62px;
+    }
+
+    .header__hero-button {
+        margin: 50px auto;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
