@@ -21,23 +21,26 @@
     gap: 25px;  
 }
 .offer__item-content {
-    display: flex;
+    width: 187px;
     flex-grow: 1;
-}
+    }
+
 .offer__icon {
-    width: 73.23px;
+    width: 70px;
     flex-shrink: 0;
 }
 
 .offer__item-title {
-    display: block;
     margin-top: 0; 
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-left: 0;
 }
 .offer__item-text {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0; 
+    margin-bottom: 0px;
+    margin-right: 28.87px;
+    margin-left: 0;
 }
 .section-header-hightlight {
     font-family: var(--teko-font);
