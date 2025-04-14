@@ -1,0 +1,19 @@
+.section {
+    background-color: black;
+    align-items: center;
+}
+.food-menu__subtitle {
+color: #FFC123;
+font-family: Shadows Into Light;
+font-size: 14px;
+}
+.food-menu__title {
+color: #FFFFFF;
+font-family: Teko, sans-serif;
+font-size: 40px;
+}
+.food-menu__discription {
+color: #CCCCCC;
+font-family: Open Sans, sans serif;
+font-size: 19px;
+}
