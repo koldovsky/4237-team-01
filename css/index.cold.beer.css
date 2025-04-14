@@ -29,12 +29,33 @@
     flex: 1;
     flex-direction: column;
     width: 187px;
+    height: 145.99px;
+
+    @media (min-width:375px) {
+     width: 242px;
+     height: 120.99px;
+    }
+    @media (min-width:425px) {
+        width: 292px;
+        height: 94.59px;
+       }
+    @media (min-width:768px) {
+        width: 207px;
+        height: 126.99px;
+       }
+    @media (min-width:1200px) {
+        width: 177px;
+        height: 158.8px;
+       }
+
 }
 .offer__item-title {
     width: 182px;
+    height: 28.59px;
 }
 .offer__item-text {
     width: 187px;
+    height: 102px;
 }
 .section-header-hightlight {
     font-family: var(--teko-font);
