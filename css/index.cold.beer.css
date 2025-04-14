@@ -20,8 +20,9 @@
     }
 }
 .offer__list {
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
+
     @media (min-width:768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
