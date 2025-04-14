@@ -1,5 +1,5 @@
  .container__fliet {
-     background-color: #111111;
+     background-color: var(--color-background-secondary);
  }
 
  .container__header {
@@ -10,8 +10,8 @@
 
 
  .header__nav {
-     padding: 39px 0px;
-     background-color: #111111;
+     padding: 39px 36px;
+     background-color: var(--color-background-secondary);
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -36,8 +36,8 @@
  }
 
  .header__menu-link {
-     color: #cccccc;
-     font-family: "Open Sans", sans-serif;
+     color: var(--color-on-primary);
+     font-family: var(--open-sans-serif-font);
      font-size: 16px;
  }
 
@@ -47,37 +47,58 @@
  }
 
  .border_2yy {
-     fill: #FFC123;
+     fill: var(--color-primary)
  }
 
  .border_2yy:hover {
-     fill: #111111;
+     fill: var(--color-background-secondary);
 
  }
 
 
  .logo_2gS {
-     fill: #FFC123;
+     fill: var(--color-primary);
  }
 
  .logo_2gS:hover {
-     fill: #111111;
+     fill: var(--color-background-secondary);
 
  }
 
  .header__contact-icon:hover {
-     fill: #FFC123;
+     fill: var(--color-primary);
      transition: 0.5s;
  }
 
  .header__contact-icon:hover .logo_2gS {
-     fill: #111111;
+     fill: var(--color-background-secondary);
      transition: 0.5s;
  }
 
+ @media(width <=990px) {
+     .header__menu {
+         display: none;
+     }
 
- .header__contact-link:hover {}
+     .header__contacts {
+         display: none;
+     }
 
- .header__contact-item {}
+     .header__burger-menu {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--color-background-secondary);
+         display: block;
+         cursor: pointer;
+         width: 24px;
+         height: 16px;
+     }
+ }
 
- .header__contact-icon {}
+ .header__burger-line {
+    display: block;
+    background-color: var(--color-on-primary);
+    width: 24px;
+    height: 2px;
+ }
