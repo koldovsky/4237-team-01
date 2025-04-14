@@ -30,11 +30,13 @@
 }
 
 .offer__item-title {
+    display: block;
     margin-top: 0; 
     margin-bottom: 5px;
 }
 .offer__item-text {
-    margin-top: 0; 
+    display: block;
+    margin-top: 0;
     margin-bottom: 0;
 }
 .section-header-hightlight {
