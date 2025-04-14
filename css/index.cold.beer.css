@@ -21,9 +21,12 @@
     gap: 25px;  
 }
 .offer__item-content {
-    width: 187px;
-    flex-grow: 1;
-    }
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
+}
 
 .offer__icon {
     width: 70px;
