@@ -14,10 +14,17 @@
         padding-left: 32px;
         padding-right: 32px;
     }
+    @media (min-width:992px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
 .offer__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block
+    @media (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .offer__item {
     display: flex;
