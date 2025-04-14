@@ -27,7 +27,7 @@
 .offer__item-content {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     width: 187px;
 }
 .offer__item-title {
