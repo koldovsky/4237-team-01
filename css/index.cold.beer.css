@@ -18,14 +18,13 @@
 .offer__item {
     display: flex;
     align-items: center;
-    gap: 25px;  
+    gap: 5px;  
 }
 .offer__item-content {
     display: flex;
     flex: 1;
     flex-direction: column;
-    min-width: 100%;
-    max-width: 100%;
+    width: 187px;
 }
 
 .offer__icon {
@@ -42,7 +41,7 @@
 .offer__item-text {
     margin-top: 0; 
     margin-bottom: 0px;
-    margin-right: 28.87px;
+    margin-right: 20px;
     margin-left: 0;
 }
 .section-header-hightlight {
