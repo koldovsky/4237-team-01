@@ -18,11 +18,11 @@
 .offer__item {
     display: flex;
     align-items: center;
-    gap: 25px;
-    
-    .offer__item-content {
-        flex-grow: 1;
-    }
+    gap: 25px;  
+}
+.offer__item-content {
+    display: flex;
+    flex-grow: 1;
 }
 .offer__icon {
     width: 73.23px;
