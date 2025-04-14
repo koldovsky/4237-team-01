@@ -17,8 +17,26 @@
 }
 .offer__item {
     display: flex;
-    align-items: center;
+    width: 287px;
+    height: 145.99px;
     gap: 5px;  
+
+    @media (min-width:375px) {
+        width: 342px;
+        height: 120.99px;
+       }
+    @media (min-width:425px) {
+           width: 392px;
+           height: 94.59px;
+          }
+    @media (min-width:768px) {
+           width: 337px;
+           height: 126.99px;
+          }
+    @media (min-width:1200px) {
+           width: 345px;
+           height: 158.8px;
+          }
 }
 .offer__icon {
     width: 70px;
