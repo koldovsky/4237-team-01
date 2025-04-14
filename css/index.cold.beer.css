@@ -52,6 +52,21 @@
 .offer__item-title {
     width: 182px;
     height: 28.59px;
+
+    @media (min-width:375px) {
+        width: 237px;
+          }
+    @media (min-width:425px) {
+        width: 287px;
+          }
+    @media (min-width:768px) {
+           width: 202px;
+           height: 35.19px;
+          }
+    @media (min-width:1200px) {
+           width: 210px;
+           height: 41.8px;
+          }
 }
 .offer__item-text {
     text-align: start;
