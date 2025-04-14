@@ -20,6 +20,21 @@
     align-items: center;
     gap: 25px;
 }
+.offer__icon {
+    width: 73.23px;
+    flex-shrink: 0;
+}
+.offer__item-content {
+    flex-grow: 1;
+}
+.offer__item-title {
+    margin-top: 0; 
+    margin-bottom: 5px;
+}
+.offer__item-text {
+    margin-top: 0; 
+    margin-bottom: 0;
+}
 .section-header-hightlight {
     font-family: var(--teko-font);
     font-size: 40px;
@@ -72,7 +87,4 @@
     font-weight: 700;
     font-family: var(--color-background-secondary); 
     font-size: 12px; 
-    }
-img {
-        width: 73.23px;
     }
