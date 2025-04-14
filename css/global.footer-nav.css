@@ -1,8 +1,8 @@
 .footer__nav {
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-background);
 }
 .main__block {
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-background);
     margin: 0px 64.3333px;
     padding: 80px 15px 60px;
 }
@@ -14,7 +14,7 @@
 }
 
 .footer-logo-img{
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-background);
     width: 176px;
     height: 35.73px;
     margin: 15px 0px 0px;
