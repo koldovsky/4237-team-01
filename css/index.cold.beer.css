@@ -15,6 +15,10 @@
         padding-right: 32px;
     }
 }
+.offer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .offer__item {
     display: flex;
     width: 287px;
@@ -24,19 +28,19 @@
     @media (min-width:375px) {
         width: 342px;
         height: 120.99px;
-       }
+    }
     @media (min-width:425px) {
            width: 392px;
            height: 94.59px;
-          }
+    }
     @media (min-width:768px) {
            width: 337px;
            height: 126.99px;
-          }
+    }
     @media (min-width:1200px) {
            width: 345px;
            height: 158.8px;
-          }
+    }
 }
 .offer__icon {
     width: 70px;
@@ -44,7 +48,7 @@
 
     @media (min-width:768px) {
            width: 100px;
-                    }
+    }
     
 }
 .offer__item-content {
@@ -61,15 +65,15 @@
     @media (min-width:425px) {
         width: 292px;
         height: 94.59px;
-       }
+    }
     @media (min-width:768px) {
         width: 207px;
         height: 126.99px;
-       }
+    }
     @media (min-width:1200px) {
         width: 177px;
         height: 158.8px;
-       }
+    }
 
 }
 .offer__item-title {
