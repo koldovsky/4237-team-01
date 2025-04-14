@@ -19,14 +19,16 @@
     display: flex;
     align-items: center;
     gap: 25px;
+    
+    .offer__item-content {
+        flex-grow: 1;
+    }
 }
 .offer__icon {
     width: 73.23px;
     flex-shrink: 0;
 }
-.offer__item-content {
-    flex-grow: 1;
-}
+
 .offer__item-title {
     margin-top: 0; 
     margin-bottom: 5px;
