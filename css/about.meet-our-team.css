@@ -1,0 +1,185 @@
+/* Адаптовані стилі для секції "Meet Our Team" */
+.team {
+  background-image: url("../image/background-brown.png");
+  background-repeat: repeat;
+  background-size: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-intro {
+  margin-bottom: 60px;
+}
+
+.team-intro__subtitle {
+  font-family: var(--shadow-into-light-font);
+  font-size: 24px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.team-intro__title {
+  font-family: var(--teko-font);
+  font-size: 62px;
+  color: var(--color-on-primary);
+  margin-bottom: 30px;
+}
+
+.team-intro__description {
+  font-family: var(--open-sans-serif-font);
+  font-size: 20px;
+  color: var(--color-on-section-description);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.team-member__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Виправлено: Прибрав закруглення зображення */
+.team-member__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0; /* прибрано закруглення */
+  margin-bottom: 25px; /* більший відступ під картинкою */
+}
+
+.team-member__name {
+  font-family: var(--teko-font);
+  font-size: 24px;
+  color: var(--color-on-primary);
+  margin-bottom: 15px; /* більший відступ під ім’ям */
+}
+
+.team-member__role {
+  font-family: var(--open-sans-serif-font);
+  font-size: 16px;
+  color: var(--color-primary);
+  margin-bottom: 20px; /* більший відступ перед описом */
+}
+
+/* Виправлено: ширший опис */
+.team-member__bio {
+  font-family: var(--open-sans-serif-font);
+  font-size: 14px;
+  color: var(--color-text-body);
+  line-height: 1.6;
+  text-align: center;
+  width: 220px; /* розширено */
+  margin: 0 auto;
+}
+
+/* Інші стилі залишено без змін */
+
+.team-hiring {
+  background-color: var(--color-primary);
+  color: black;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.team-hiring__title {
+  font-family: var(--teko-font);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.team-hiring__text {
+  font-family: var(--open-sans-serif-font);
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.team-hiring__button {
+  display: inline-block;
+  color: black;
+  font-family: var(--teko-font);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.team-hiring__button:hover {
+  text-decoration: underline;
+}
+
+
+.team-video {
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('image/about-us/video-about-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-on-primary);
+  margin-top: 60px;
+}
+
+
+.team-video__title {
+  font-family: var(--teko-font);
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.team-video__subtitle {
+  font-family: var(--open-sans-serif-font);
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.team-video__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-family: var(--teko-font);
+  font-size: 22px;
+}
+
+.team-video__w-icon-panel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffc123;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px;
+}
+
+.team-video__w-icon-panel:hover {
+  background-color: #ffb100;
+}
+
+.team-video__w-icon-panel_inner,
+.team-video__iconElement_3D2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.team-video__iconElement_inner_2iN svg {
+  fill: black;
+  width: 40px;
+  height: 40px;
+}
