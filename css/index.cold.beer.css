@@ -99,6 +99,12 @@
 }
 
 .offer__item-title {
+    font-family: var(--teko-font);
+    font-size: 26px;
+    color: var(--color-on-primary);
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
     width: 182px;
     height: 28.59px;
 
@@ -109,10 +115,14 @@
     @media (min-width:425px) {
         width: 287px;
     }
+    @media (min-width:767px) {
+        font-size: 38px;
+    }
 
     @media (min-width:768px) {
         width: 202px;
         height: 35.19px;
+        font-size: 32px;
     }
 
     @media (min-width:1200px) {
@@ -120,9 +130,12 @@
         height: 41.8px;
     }
 }
-
 .offer__item-text {
+    font-family: var(--open-sans-serif-font);
+    font-size: 17px;
+    color: var(--color-text-body);
     text-align: left;
+    font-weight: 400;
     width: 187px;
     height: 102px;
 
@@ -162,31 +175,6 @@
     @media (min-width:992px) {
         font-size: 62px;
     }
-}
-
-.offer__item-title {
-    font-family: var(--teko-font);
-    font-size: 26px;
-    color: var(--color-on-primary);
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-
-    @media (min-width:767px) {
-        font-size: 38px;
-    }
-
-    @media (min-width:768px) {
-        font-size: 32px;
-    }
-}
-
-.offer__item-text {
-    font-family: var(--open-sans-serif-font);
-    font-size: 17px;
-    color: var(--color-text-body);
-    text-align: center;
-    font-weight: 400;
 }
 
 .offer__button {
