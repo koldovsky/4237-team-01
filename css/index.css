@@ -3,12 +3,20 @@
 @import "./contacts.css";
 @import "./global.header-nav.css";
 @import "./index.header-hero.css";
+@import "./index.menu-preview.css";
 @import "./index.beer-carousel.css";
 @import "./index.best-offers.css";
 @import "./about.about-beer-boutique.css";
+@import "./about.header-hero.css";
 @import "./index.cold.beer.css";
 @import "./index.friday-deal.css";
 @import "./index.about-beer.css";
 @import "./index.testimonials.css";
 @import "./index.testimonials-video.css";
+<<<<<<< HEAD
+@import "./menu.food-menu.css";
+=======
 @import "./index.latest-posts.css";
+@import "./global.footer-nav.css";
+@import "./index.best-dishes.css";
+>>>>>>> d56e14e7f8f5f6d8e818df3251ec914444e2df22
