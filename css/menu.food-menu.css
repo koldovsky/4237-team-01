@@ -14,9 +14,15 @@ font-size: 40px;
 }
 .food-menu__discription {
 color: #CCCCCC;
-font-family: Open Sans, sans serif;
+font-family: Open Sans, sans-serif;
 font-size: 19px;
 }
 .food-menu-section__title {
+color: #FFC123;
+font-family: Teco, sans-serif;
+font-size: 26px;
+}
+.food-menu__item-name  {
+    color: #FFFFFF;
     
 }
