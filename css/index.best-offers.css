@@ -5,6 +5,8 @@
     padding-bottom: 90px;
     padding-left: 24px;
     padding-right: 24px;
+    min-width: 320px;
+    overflow: hidden;
 
     @media (min-width: 768px) {
         padding-bottom: 110px;
