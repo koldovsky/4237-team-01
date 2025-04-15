@@ -1,1 +1,6 @@
+@import "./reset.css";
+@import "./global.css";
+@import "./global.header-nav.css";
+@import "./menu.food-menu.css";
+@import "./global.footer-nav.css";
 @import "./menu.bar-menu.css";
