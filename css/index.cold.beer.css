@@ -21,6 +21,10 @@
         grid-template-columns: 1fr 2fr;
     }
 }
+. offer__intro {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .offer__list {
     display: flex;
