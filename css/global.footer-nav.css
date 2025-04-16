@@ -15,7 +15,7 @@
 }
 
 .footer__beer-block {
-    flex: 1 1 300px;
+    flex: 1 1 300px; 
 }
 
 .footer__logo-footer {
@@ -23,7 +23,7 @@
 }
 
 .footer-logo-img {
-    max-width: 150px;
+    max-width: 176.4px;
     height: auto;
 }
 
@@ -42,7 +42,7 @@
 .footer__socials svg {
     width: 32px;
     height: 32px;
-    fill: var(--color-on-primary);
+    fill: var(--color-background);
     transition: fill 0.3s ease;
 }
 
@@ -63,10 +63,11 @@
 
 .footer__menu {
     list-style: none;
+    margin: 25px;
 }
 
 .footer__menu-item {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .footer__menu-link {
@@ -164,7 +165,6 @@
 .footer_rights p {
     margin-bottom: 5px;
 }
-
 
 @media (max-width: 768px) {
     .footer__main-block {
