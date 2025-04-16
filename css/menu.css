@@ -1,2 +1,8 @@
 @import "./menu.bar-menu.css";
 @import "./menu.alcohol-free-menu.css";
+@import "./reset.css";
+@import "./global.css";
+@import "./global.header-nav.css";
+@import "./menu.food-menu.css";
+@import "./global.footer-nav.css";
+@import "./menu.bar-menu.css";
