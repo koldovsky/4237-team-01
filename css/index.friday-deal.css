@@ -7,10 +7,23 @@
     text-align: center;
     padding-top: 65px;
     padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
   }
 
-.friday-deal__content {
+.friday-deal__background {
     background-image: var(--background-secondary);
+    width: 272px;
+    height: 474px;
+    padding: 51px 47px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.friday-deal__content {
     box-sizing: border-box;
     justify-content: flex-start;
     position: relative;
@@ -18,11 +31,10 @@
     flex-direction: column;
     flex-basis: 100%;
     text-align: center;
-    top: 65px;
-    left: 24px;
     width: 272px;
     height: 474px;
     padding: 51px 47px;
+    z-index: 1;
 }
 
 .friday-deal__discount-label {
