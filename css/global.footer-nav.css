@@ -47,7 +47,7 @@
 }
 
 .footer__socials svg:hover {
-    fill: var(--color-primary);
+    fill: var(--color-background);
 }
 
 .footer__nav-block {
