@@ -35,13 +35,14 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #1a1a1a;
+    background: #4d4848;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 6px solid #1c1b0b; 
 }
 
 .roulette-wheel__item {
@@ -56,36 +57,81 @@
     padding-right: 5%;
     font-weight: bold;
     font-size: 1rem;
-    color: white;
+    color: rgb(205, 66, 66);
     left: 75%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
 }
 
+ .roulette-wheel__item-orange {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom right; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    left: 0;
+    top: 0;
+    background: #FFC123;
+} 
+ 
+.roulette-wheel__item-dark {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom right; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    left: 0;
+    top: 0;
+    background: rgb(13 12 8); 
+} 
+
+
 .roulette-wheel__item-text {
     transform: rotate(0deg);
+    color: rgb(255, 255, 255);
+}
+
+.roulette-wheel__item-text-orange-side {
+    transform: rotate(0deg);
+    color: rgb(13 12 8);
 }
 
 .button_center {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
-    background: #f8b700;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    color: #111;
+    background-color: #f8b700; /* Початковий оранжевий колір */
+    border: 4px solid #000; /* Чорна рамка */
+    border-radius: 50%; /* Менш закруглені кути, ніж у першому варіанті */
+    color: #000; /* Чорний текст */
+    font-family: 'Arial Black', sans-serif; /* Жирний шрифт */
+    font-size: 1.2rem;
     font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
     z-index: 10;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease; /* Плавні переходи для анімації */
 }
 
 .button_center:hover {
-    background: #ffcc33;
-    transform: scale(1.05);
+
+    background-color: #000; /* Чорний колір */
+    color: #f8b700; /* Оранжевий текст */
+    border-color: #f8b700; /* Оранжева рамка */
 }
 
 .roulette-wheel__pointer {
