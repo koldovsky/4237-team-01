@@ -26,6 +26,7 @@
 
   .testimonials__title {
     margin-bottom: 10px;
+    text-transform: uppercase;
   }
 
   .testimonials__description {
