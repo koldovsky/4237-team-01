@@ -141,15 +141,16 @@
     }
 
     .latest-posts__list {
-        padding: 0 15px;
+        padding: 0 32px;
         display: grid;
+        gap: 30px;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 30px;
+        margin-top: 45px;
     }
 
     .latest-posts__item {
-        padding: 0 15px;
-        margin-top: 30px;
+        padding: 0;
+        margin-top: 0;
     }
 
 
@@ -189,7 +190,7 @@
         display: grid;
         grid-template-columns: repeat(3, 370px);
         gap: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
         justify-content: center;
     }
 

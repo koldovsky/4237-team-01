@@ -1,65 +1,9 @@
+@import "reset.css";
+@import "global.css";
 @import"contacts.header-hero.css";
+@import"contacts-info.css";
+@import"contacts-map-form.css";
 
 .contacts {
     background-image: var(--background-image-brown);
-
-
-    .contacts__title-section {
-        width: 100%;
-        max-width: 100%;
-        background-image: var(--background-secondary);
-        background-size: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        min-height: 110px;
-        overflow: hidden;
-
-        .contacts__title {
-            font-family: "Open Sans", sans-serif;
-            font-size: 40px;
-            font-weight: 700;
-            color: var(--color-background-secondary);
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 40px;
-            padding-bottom: 30px;
-            min-width: 320px;
-            max-width: 1200px;
-            /*position: relative;*/
-            box-sizing: border-box;
-            width: 100%;
-        }
-    }
-
-    .contacts__label {
-        color: var(--color-on-primary);
-    }
-
-    .contacts__text {
-        color: var(--color-text-grey);
-    }
-
-    .contacts__map-form {
-
-        .contacts__map {
-            margin: auto;
-            display: block;
-            box-sizing: border-box;
-            height: 573px;
-            margin: 0;
-            min-width: 320px;
-
-        }
-
-        .contacts__form {
-            height: 573px;
-            width: 85%;
-            background-color: var(--color-background-black);
-        }
-
-    }
-
-
 }
