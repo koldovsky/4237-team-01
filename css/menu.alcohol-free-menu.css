@@ -14,7 +14,9 @@
 .alcohol-free-menu__categories {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
 }
 
 .alcohol-free-menu__title {
