@@ -1,0 +1,73 @@
+<section class="roulette-section">
+    <div class="container">
+        <h2 class="roulette-section__title">BEER & FOOD ROULETTE</h2>
+        <p class="roulette-section__description">Let fate decide your order! Spin to get a random beer and dish.</p>
+
+        <div class="roulette-container">
+            <div class="roulette-wheel">
+                <div class="roulette-wheel__circle">
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(0deg);">
+                        <div class="roulette-wheel__item-text">Blue<br>Style</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(45deg);">
+                        <div class="roulette-wheel__item-text">Boutique<br>IPA</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(90deg);">
+                        <div class="roulette-wheel__item-text">Indian<br>Pale Ale</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(135deg);">
+                        <div class="roulette-wheel__item-text">Lager<br>Beer</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(180deg);">
+                        <div class="roulette-wheel__item-text">Belgian<br>Dream</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(225deg);">
+                        <div class="roulette-wheel__item-text">Bitter</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(270deg);">
+                        <div class="roulette-wheel__item-text">Stout</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(315deg);">
+                        <div class="roulette-wheel__item-text">Caramel<br>Ale</div>
+                    </div>
+                    <button class="button_center" onclick="spinBeerWheel()">SPIN</button>
+                </div>
+                <div class="roulette-wheel__pointer"></div>
+            </div>
+
+            <div class="roulette-wheel">
+                <div class="roulette-wheel__circle">
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(0deg);">
+                        <div class="roulette-wheel__item-text">Pizza</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(45deg);">
+                        <div class="roulette-wheel__item-text">Burger</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(90deg);">
+                        <div class="roulette-wheel__item-text">Salad</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(135deg);">
+                        <div class="roulette-wheel__item-text">Pasta</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(180deg);">
+                        <div class="roulette-wheel__item-text">Steak</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(225deg);">
+                        <div class="roulette-wheel__item-text">Sushi</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(270deg);">
+                        <div class="roulette-wheel__item-text">Taco</div>
+                    </div>
+                    <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(315deg);">
+                        <div class="roulette-wheel__item-text">Fries</div>
+                    </div>
+                    <button class="button_center" onclick="spinFoodWheel()">SPIN</button>
+                </div>
+                <div class="roulette-wheel__pointer"></div>
+            </div>
+        </div>
+
+        <div id="resultDisplay" class="result-text"></div>
+    </div>
+</section>
+

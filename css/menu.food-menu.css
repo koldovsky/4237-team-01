@@ -2,44 +2,57 @@
     background-color: #150e0e;
     padding-top: 30px;
     padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
     min-width: 320px;
 }
 .food-menu__subtitle {
-    color: #FFC123;
-    font-family: Shadows Into Light;
+    color: var(--color-primary);
+    font-family: var(--shadow-into-light-font);
     font-size: 14px;
     text-align: center;
 }
 .food-menu__title {
-    color: #FFFFFF;
-    font-family: Teko, sans-serif;
+    color: var(--color-on-primary);
+    font-family: var(--teko-font);
     font-size: 40px;
     text-align: center;
 }
-.food-menu__discription {
-    color: #CCCCCC;
-    font-family: Open Sans, sans-serif;
+.food-menu__description {
+    color: var(--color-on-section-description);
+    font-family: var(--open-sans-serif-font);
     font-size: 19px;
     text-align: center;
 }
 .food-menu__category-title {
-    color: #FFC123;
-    font-family: Teco, sans-serif;
+    color: var(--color-primary);
+    font-family: var(--teko-font);
     font-size: 26px;
 }
 .food-menu__item-name {
-    color: #FFFFFF;
-    font-family: Teco, sans-serif;
+    color: var(--color-on-primary);
+    font-family: var(--teko-font);
     font-size: 26px;
 }
 .food-menu__item-price {
-    color: #FFC123;
-    font-family: Teco, sans-serif;
+    color: var(--color-primary);
+    font-family: var(--teko-font);
     font-size: 26px;
 }
 .food-menu__item-description {
-    color: #9D9D9D;
-    font-family: Open Sans, sans-serif;
+    color: var(--color-on-primary);
+    font-family: var(--open-sans-serif-font);
     font-size: 17px;
+}
+.food-menu__category-title,
+.food-menu__item-name {
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: left;
+}
+.food-menu__list {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
 }
