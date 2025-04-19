@@ -1,5 +1,5 @@
 .food-menu {
-    background-color: #150e0e;
+    background-color: var(--background-primary);
     padding-top: 30px;
     padding-bottom: 90px;
     padding-left: 30px;
@@ -39,6 +39,10 @@
     color: var(--color-primary);
     font-family: var(--teko-font);
     font-size: 26px;
+}
+.food-menu__item-header {
+    display: flex;
+    justify-content: space-between;
 }
 .food-menu__item-description {
     color: var(--color-on-primary);
