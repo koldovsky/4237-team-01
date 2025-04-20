@@ -72,7 +72,6 @@
 
  }
 
-
  .logo_2gS {
      fill: var(--color-primary);
  }
@@ -80,6 +79,14 @@
  .logo_2gS:hover {
      fill: var(--color-background-secondary);
 
+ }
+
+ .header__contact-icon-3{
+    background-color: var(--color-primary) ;
+ }
+
+ .header__contact-icon-3:hover{
+    background-color: var(--color-background-secondary);
  }
 
  .header__contact-icon:hover {
