@@ -1,6 +1,6 @@
 <section class="roulette-section">
-  <div class="container">
-    <h2 class="roulette-section__title">BEER & FOOD ROULETTE</h2>
+  <div >
+    <h2 class="roulette-section__title">Beer & Food whell of fortune</h2>
     <p class="roulette-section__description">
       Let fate decide your order! Spin to get a random beer and dish.
     </p>
@@ -45,7 +45,7 @@
             class="roulette-wheel__item"
             style="transform: translate(-50%, -50%) rotate(0deg)"
           >
-            <div class="roulette-wheel__item-text">Blue<br />Style</div>
+            <div class="roulette-wheel__item-text-dark-side">Blue<br />Style</div>
           </div>
 
           <div
@@ -64,7 +64,7 @@
             style="transform: translate(-50%, -50%) rotate(90deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-90deg)"
             >
               Indian<br />Pale Ale
@@ -86,7 +86,7 @@
             style="transform: translate(-50%, -50%) rotate(180deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-180deg)"
             >
               Belgian<br />Dream
@@ -108,7 +108,7 @@
             style="transform: translate(-50%, -50%) rotate(270deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-270deg)"
             >
               Stout
@@ -171,7 +171,7 @@
             class="roulette-wheel__item"
             style="transform: translate(-50%, -50%) rotate(0deg)"
           >
-            <div class="roulette-wheel__item-text">Pizza</div>
+            <div class="roulette-wheel__item-text-dark-side">Pizza</div>
           </div>
           <div
             class="roulette-wheel__item"
@@ -189,7 +189,7 @@
             style="transform: translate(-50%, -50%) rotate(90deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-90deg)"
             >
               Salad
@@ -211,7 +211,7 @@
             style="transform: translate(-50%, -50%) rotate(180deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-180deg)"
             >
               Steak
@@ -233,7 +233,7 @@
             style="transform: translate(-50%, -50%) rotate(270deg)"
           >
             <div
-              class="roulette-wheel__item-text"
+              class="roulette-wheel__item-text-dark-side"
               style="transform: rotate(-270deg)"
             >
               Taco
@@ -277,7 +277,7 @@
 
     items.forEach((item) => {
       const textElement = item.querySelector(
-        ".roulette-wheel__item-text, .roulette-wheel__item-text-orange-side"
+        ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
       );
 
       const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
@@ -302,7 +302,7 @@
 
     items.forEach((item) => {
       const textElement = item.querySelector(
-        ".roulette-wheel__item-text, .roulette-wheel__item-text-orange-side"
+          ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
       );
 
       const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
