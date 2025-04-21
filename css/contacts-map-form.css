@@ -1,0 +1,19 @@
+.contacts__map-form {
+
+    .contacts__map {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 573px;
+        margin: 0;
+        min-width: 320px;
+    }
+
+    .contacts__form {
+        height: 573px;
+        width: 85%;
+        background-color: var(--color-background-black);
+    }
+
+}

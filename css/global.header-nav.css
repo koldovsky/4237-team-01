@@ -41,6 +41,23 @@
      font-size: 16px;
  }
 
+ .header__menu-item::after {
+     content: "";
+     height: 2px;
+     display: block;
+     margin-top: 7px;
+     /* Товщина лінії */
+     background: white;
+     /* Колір лінії */
+     transform: scaleX(0);
+     transform-origin: left;
+     transition: 0.5s;
+ }
+
+ .header__menu-item:hover::after{
+    transform: scaleX(1) ;
+ }
+ 
  .header__contacts {
      display: flex;
      gap: 15px;
@@ -55,7 +72,6 @@
 
  }
 
-
  .logo_2gS {
      fill: var(--color-primary);
  }
@@ -63,6 +79,14 @@
  .logo_2gS:hover {
      fill: var(--color-background-secondary);
 
+ }
+
+ .header__contact-icon-3{
+    background-color: var(--color-primary) ;
+ }
+
+ .header__contact-icon-3:hover{
+    background-color: var(--color-background-secondary);
  }
 
  .header__contact-icon:hover {
@@ -85,10 +109,10 @@
      }
 
      .header__burger-menu {
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: var(--color-background-secondary);
+         display: flex !important;
+         flex-direction: column;
+         justify-content: space-between;
+         background-color: var(--color-background-secondary);
          display: block;
          cursor: pointer;
          width: 24px;
@@ -97,8 +121,8 @@
  }
 
  .header__burger-line {
-    display: block;
-    background-color: var(--color-on-primary);
-    width: 24px;
-    height: 2px;
+     display: block;
+     background-color: var(--color-on-primary);
+     width: 24px;
+     height: 2px;
  }

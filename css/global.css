@@ -26,12 +26,12 @@
     --color-secondary: #F5F5F5;
     --color-on-secondary: #333333;
     --color-background: #070403;
+    --color-background-secondary: #000000FC;
     --color-text: #333333;
     --color-text-secondary: #777777;
     --color-text-body: #9d9d9dfc;
     --color-slider-button: #dba620;
     --color-slider-button-hover: #ffc123;
-    --color-background-secondary: #111111;
     --color-on-section-description: #CCCCCC;
     --teko-font: "Teko", sans-serif;
     --shadow-into-light-font: "Shadows Into Light", cursive;

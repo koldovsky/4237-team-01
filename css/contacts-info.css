@@ -1,0 +1,43 @@
+.contacts__info {
+    display: flex;
+    flex-wrap: wrap;
+
+    .contacts__item {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0, 7.5px;
+        position: relative;
+
+        .contacts_icon_box {
+            background-color: var(--color-background-secondary);
+            border-radius: 50px;
+            background-size: auto;
+            height: 50px;
+            width: 50px;
+
+            .contacts__item {
+                height: 26px;
+                margin: auto;
+                margin-top: 12px;
+                overflow: hidden;
+
+            }
+        }
+
+
+
+        .contacts__label {
+            color: var(--color-on-primary);
+            display: block;
+            
+        }
+
+        .contacts__text {
+            color: var(--color-text-body);
+            display: block;
+
+        }
+
+    }
+
+}

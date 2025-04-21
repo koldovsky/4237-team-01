@@ -1,0 +1,33 @@
+.header__hero-about{
+    background: url(../image/header/index-about-menu-contacts-background.png) 100% no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    padding: 40px 0 30px 0;
+
+}
+.header__hero-about-title{
+    font-family: var(--teko-font);
+    color: var(--color-background-secondary);
+    font-size: 62px;
+    text-transform: uppercase;
+}
+
+@media(width<=977px){
+    .header__hero-about{
+        height: 120px;
+    } 
+    .header__hero-about-title{
+        font-size: 51px;
+    }
+}
+
+@media(width<=767px){
+    .header__hero-about{
+        height: 110px;
+    } 
+    .header__hero-about-title{
+        font-size: 40px;
+    }
+}
