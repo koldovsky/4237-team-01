@@ -1,86 +1,95 @@
 .best-dishes {
-    padding: 80px 0;
-    color: #ffffff;
-    font-family: "Oswald", sans-serif;
+  padding: 60px 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.best-dishes__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.best-dishes__group {
+  flex: 1 1 45%;
+}
+
+.best-dishes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.best-dishes__item {
+  margin-bottom: 24px;
+}
+
+.best-dishes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.best-dishes__name {
+  font-family: var(--teko-font);
+  font-size: 38px;
+  color: var(--color-on-primary);
+
+  @media (min-width:768px) {
+      font-size: 46px;
   }
-  
-  .best-dishes__container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+  @media (min-width:992px) {
+      font-size: 54px;
   }
-  
-  .best-dishes__group {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 60px;
+}
+
+.best-dishes__price {
+  font-family: var(--teko-font);
+  font-size: 38px;
+  color: var(--color-primary);
+
+  @media (min-width:768px) {
+      font-size: 46px;
   }
-  
-  .best-dishes__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
+  @media (min-width:992px) {
+      font-size: 54px;
   }
-  
-  .best-dishes__item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 20px;
-  }
-  
-  .best-dishes__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .best-dishes__name {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  
-  .best-dishes__price {
-    font-size: 24px;
-    font-weight: 700;
-    color: #ffc027;
-    margin-left: 16px;
-  }
-  
-  .best-dishes__desc {
-    margin-top: 8px;
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: "Open Sans", sans-serif;
-    color: #d3d3d3;
-  }
-  
-  .best-dishes__actions {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .best-dishes__actions .header__menu-link {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: #ffc027;
-    color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .best-dishes__actions .header__menu-link:hover {
-    background-color: #e6a900;
-    color: #000;
-  }
-  
+}
+
+.best-dishes__desc {
+  font-size: 17px;
+  color: #d0d0d0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.best-dishes__actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.best-dishes__btn {
+  background-color: #ffc20e;
+  color: #1c140f;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Teko', sans-serif;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.best-dishes__btn:hover {
+  background-color: #e3ad00;
+}
