@@ -14,14 +14,12 @@
             height: 573px;
             border: 0;
             display: block;
-
         }
     }
 
     .contacts__form-wrapper {
         display: grid;
         background-color: var(--color-background-tertiary);
-
 
         .contacts__form {
             height: 573px;
@@ -34,7 +32,6 @@
                 padding: 21px 40px;
                 background: var(--color-background-text);
                 border-color: var(--color-background-form);
-
             }
         }
     }
