@@ -54,10 +54,10 @@
      transition: 0.5s;
  }
 
- .header__menu-item:hover::after{
-    transform: scaleX(1) ;
+ .header__menu-item:hover::after {
+     transform: scaleX(1);
  }
- 
+
  .header__contacts {
      display: flex;
      gap: 15px;
@@ -81,12 +81,12 @@
 
  }
 
- .header__contact-icon-3{
-    background-color: var(--color-primary) ;
+ .header__contact-icon-3 {
+     background-color: var(--color-primary);
  }
 
- .header__contact-icon-3:hover{
-    background-color: var(--color-background-secondary);
+ .header__contact-icon-3:hover {
+     background-color: var(--color-background-secondary);
  }
 
  .header__contact-icon:hover {
@@ -109,14 +109,23 @@
      }
 
      .header__burger-menu {
-         display: flex !important;
-         flex-direction: column;
-         justify-content: space-between;
-         background-color: var(--color-background-secondary);
          display: block;
+         background-color: var(--color-background-secondary);
          cursor: pointer;
          width: 24px;
          height: 16px;
+     }
+
+     .header__burger-line:nth-child(1) {
+         transform: translateY(-5px);
+     }
+
+     .header__burger-line:nth-child(2) {
+        transform: translateY(0);
+    }
+
+     .header__burger-line:nth-child(3) {
+         transform: translateY(5px);
      }
  }
 
