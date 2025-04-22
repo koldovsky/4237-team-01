@@ -1,4 +1,3 @@
-
 .container-fluid {
     padding: 0px 20px;
     background-color: var(--color-background);
@@ -124,6 +123,7 @@
         z-index: 10000;
 
     }
+
     .header__menu {
         flex-direction: column;
         align-items: center;
@@ -131,7 +131,8 @@
         gap: 20px;
         opacity: 0;
     }
-    .header__contacts{
+
+    .header__contacts {
         align-items: center;
     }
 

@@ -1,12 +1,14 @@
 .about-beer {
   display: flex;
 }
+
 .about-beer__body {
   background-color: var(--color-background-secondary);
   display: flex;
   width: 100%;
   flex: 1;
 }
+
 .about-beer__content {
   display: flex;
   flex-direction: column;
@@ -31,6 +33,7 @@
     font-size: 28px;
   }
 }
+
 .about-beer__title {
   font-family: var(--teko-font);
   font-size: 40px;
@@ -46,6 +49,7 @@
     font-size: 62px;
   }
 }
+
 .about-beer__subtitle {
   font-family: var(--open-sans-serif-font);
   font-weight: 500;
@@ -54,6 +58,7 @@
   line-height: 147%;
   margin-bottom: 28px;
 }
+
 .about-beer__description {
   font-family: var(--open-sans-serif-font);
   font-size: 17px;
@@ -61,6 +66,7 @@
   line-height: 150%;
   margin-bottom: 41px;
 }
+
 .about-beer__button {
   background-color: var(--color-primary);
   color: var(--color-background-secondary);
@@ -76,6 +82,7 @@
   text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
+
 .about-beer__button:hover {
   background-color: #e0a800;
 }
@@ -85,13 +92,16 @@
     display: flex;
     flex-direction: column;
   }
+
   .about-beer__content {
     padding: 90px 30px;
   }
+
   .about-beer__image-wrapper {
     width: 100%;
     height: 100%;
   }
+
   .about-beer__image {
     width: 100%;
     object-fit: cover;
@@ -105,6 +115,7 @@
   .about-beer__image-wrapper {
     flex: 1;
   }
+
   .about-beer__image {
     width: 100%;
     max-height: 700px;
