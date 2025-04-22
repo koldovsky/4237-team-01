@@ -26,7 +26,7 @@
     --color-on-primary: #FFFFFF;
     --color-secondary: #F5F5F5;
     --color-on-secondary: #333333;
-    --color-background: #070403;
+    --color-background: #111111;
     --color-background-secondary: #000000FC;
     --color-background-tertiary: #0000009c;
     --color-background-form: #fcfaf8;
@@ -41,6 +41,10 @@
     --shadow-into-light-font: "Shadows Into Light", cursive;
     --open-sans-serif-font: "Open Sans", sans-serif;
 }
+
+body.no-scroll {
+    overflow: hidden;
+  }
 
 img {
     display: block;
