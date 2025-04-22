@@ -20,6 +20,7 @@
                 margin: auto;
                 margin-top: 12px;
                 overflow: hidden;
+                padding: 0 7.5px;
 
             }
         }
@@ -29,12 +30,15 @@
         .contacts__label {
             color: var(--color-on-primary);
             display: block;
-            
+            font-size: 26px;
+            font-family: var(--teko-font);
         }
 
         .contacts__text {
             color: var(--color-text-body);
             display: block;
+            font-size: 17px;
+
 
         }
 
