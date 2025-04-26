@@ -85,10 +85,16 @@
         .beer-carousel__button--prev {
             transform: scaleX(-1);
             left: 0;
+            @media (min-width: 1200px) {
+                left: -20px;
+            }
         }
 
         .beer-carousel__button--next {
             right: 0;
+            @media (min-width: 1200px) {
+                right: -20px;
+            }
         }
 
         .beer-carousel__button:hover {
@@ -122,21 +128,26 @@
                 .beer-carousel__card-img-wrap {
                     min-width: 50%;
                     max-width: 175px;
+                    /* max-height: 350px; */
                     align-self: center;
 
                     @media (min-width: 768px) {
                         min-width: 160px;
                         max-width: 300px;
+                        /* max-height: 450px; */
                     }
 
                     @media (min-width: 992px) {
                         min-width: 210px;
                         max-width: 300px;
+                        /* max-height: 500px; */
                     }
 
                     .beer-carousel__card-img {
                         width: 100%;
                         height: auto;
+                        max-height: 420px;
+                        object-fit: contain;
                     }
                 }
 
