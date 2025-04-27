@@ -8,7 +8,6 @@
     font-size: 28px;
     margin-bottom: 15px;
     color: var(--color-primary);
-    
   }
 
   .roulette-section__description {
@@ -62,13 +61,22 @@
     left: 0;
     top: 0;
   }
+  .roulette-wheel__item {
+    width: 50%;
+    height: auto;
+    transform-origin: 0% 50%;
+    padding-right: 5%;
+    justify-content: flex-end;
+    left: 75%;
+    top: 50%;
+  }
 
   .roulette-wheel__item-orange {
     background: var(--color-primary);
   }
 
   .roulette-wheel__item-dark {
-    background: rgb(13, 12, 8);
+    background: var(--color-background);
   }
 
   .roulette-wheel__item-text-dark-side,
@@ -83,16 +91,6 @@
 
   .roulette-wheel__item-text-orange-side {
     color: var(--color-background);
-  }
-
-  .roulette-wheel__item {
-    width: 50%;
-    height: auto;
-    transform-origin: 0% 50%;
-    padding-right: 5%;
-    justify-content: flex-end;
-    left: 75%;
-    top: 50%;
   }
 
   .roulette-wheel__pointer-orange,
@@ -135,17 +133,25 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  z-index: 10;
 }
 
-.button_center:hover {
+.button_center:active {
   background-color: var(--color-background);
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.container__random {
+@media (hover: hover) and (pointer: fine) {
+  .button_center:hover {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
+  }
+}
 
+.container__random {
   max-width: 1200px;
   margin: auto;
 }
