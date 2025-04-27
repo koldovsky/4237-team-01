@@ -2,6 +2,7 @@
     background-image: var(--background-primary);
     padding-top: 120px;
     padding-bottom: 30px;
+
 }
 .bar-menu__subtitle {
     color: var(--color-primary);
@@ -34,6 +35,7 @@
     color: var(--color-on-primary);
     font-family: var(--teko-font);
     font-size: 38px;
+    white-space: nowrap;
 }
 
 .bar-menu__item-description {
@@ -47,3 +49,23 @@
     font-family: var(--teko-font);
     font-size: 38px;
 }
+
+.bar-menu__list {
+    padding: 0;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; 
+    flex-grow: 1;
+
+}
+
+.bar-menu__item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
