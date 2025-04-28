@@ -1,39 +1,95 @@
-// Стани для пивного колеса
-let isBeerSpinning = false;
-let beerRotation = 0;
-let beerSpinTimeout;
+function renderWheel(wheelData, containerClass) {
+  let wheelHTML = "";
 
-// Стани для колеса їжі
-let isFoodSpinning = false;
-let foodRotation = 0;
-let foodSpinTimeout;
+  wheelHTML += `
+    <div class="roulette-wheel__circle${containerClass.includes("left") ? "__left" : "__right"
+    }">
+      <div class="roulette-wheel__item-orange" style="transform: rotate(22.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(67.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(112.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(157.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(202.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(247.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(292.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(337.5deg) skew(45deg)"></div>
+  `;
 
-const buttonBeer = document.querySelectorAll(".button_center")[0];
-const buttonFood = document.querySelectorAll(".button_center")[1];
+  const numItems = wheelData.length;
+  const angleIncrement = 360 / numItems;
 
-if (buttonBeer) {
-  buttonBeer.addEventListener("click", function () {
-    spinBeerWheel(buttonBeer);
+  wheelData.forEach((item, index) => {
+    const rotation = index * angleIncrement;
+    wheelHTML += `
+      <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(${rotation}deg)">
+        <div class="roulette-wheel__item-text${index % 2 === 0 ? "-dark" : "-orange"
+      }-side" style="transform: rotate(-${rotation}deg)">
+          ${item}
+        </div>
+      </div>
+    `;
   });
+
+  wheelHTML += `</div>`;
+
+  const wheelContainer = document.querySelector(containerClass);
+
+  wheelHTML += wheelContainer.innerHTML;
+  wheelContainer.innerHTML = wheelHTML;
 }
 
-if (buttonFood) {
-  buttonFood.addEventListener("click", function () {
-    spinFoodWheel(buttonFood);
-  });
-}
+const beerData = [
+  "Blue<br />Style",
+  "Boutique<br />IPA",
+  "Indian<br />Pale Ale",
+  "Lager<br />Beer",
+  "Belgian<br />Dream",
+  "Bitter",
+  "Stout",
+  "Caramel<br />Ale",
+];
 
-function spinBeerWheel(button) {
-  const wheel = document.querySelectorAll(".roulette-wheel__circle")[0];
+const foodData = [
+  "Spicy <br />Nachos",
+  "Beef <br />King",
+  "Chicekn<br />burger",
+  "Classic<br />Burger",
+  "Lamb <br />Gyro",
+  "Lamb <br />Chops",
+  "Fish <br />& <br />Chips",
+  "Chiken <br />Wrap",
+];
+
+// Стани для обох коліс
+let wheelStates = {
+  beer: {
+    isSpinning: false,
+    rotation: 0,
+    spinTimeout: null,
+    wheelSelector: ".roulette-wheel__circle__left",
+    buttonSelector: ".button-center__left",
+  },
+  food: {
+    isSpinning: false,
+    rotation: 0,
+    spinTimeout: null,
+    wheelSelector: ".roulette-wheel__circle__right",
+    buttonSelector: ".button-center__right",
+  },
+};
+
+function spinWheel(type) {
+  const state = wheelStates[type];
+  const wheel = document.querySelector(state.wheelSelector);
+  const button = document.querySelector(state.buttonSelector);
   const items = wheel.querySelectorAll(".roulette-wheel__item");
 
-  if (!isBeerSpinning) {
+  if (!state.isSpinning) {
     // Почати обертання
     const randomDeg = Math.floor(Math.random() * 360) + 3600;
-    beerRotation += randomDeg;
+    state.rotation += randomDeg;
 
     wheel.style.transition = "transform 5s ease-out";
-    wheel.style.transform = `rotate(${beerRotation}deg)`;
+    wheel.style.transform = `rotate(${state.rotation}deg)`;
 
     items.forEach((item) => {
       const textElement = item.querySelector(
@@ -46,25 +102,25 @@ function spinBeerWheel(button) {
 
       textElement.style.transition = "transform 5s ease-out";
       textElement.style.transform = `rotate(${-(
-        beerRotation + initialRotation
+        state.rotation + initialRotation
       )}deg)`;
     });
 
-    isBeerSpinning = true;
+    state.isSpinning = true;
     button.textContent = "STOP";
 
-    beerSpinTimeout = setTimeout(() => {
-      isBeerSpinning = false;
+    state.spinTimeout = setTimeout(() => {
+      state.isSpinning = false;
       button.textContent = "SPIN";
-    }, 5_000);
+    }, 5000);
   } else {
     // Зупинити обертання
     const computedStyle = getComputedStyle(wheel);
     const matrix = new DOMMatrix(computedStyle.transform);
     const currentRotation = Math.atan2(matrix.b, matrix.a) * (180 / Math.PI);
-    beerRotation = currentRotation;
+    state.rotation = currentRotation;
 
-    clearTimeout(beerSpinTimeout);
+    clearTimeout(state.spinTimeout);
 
     wheel.style.transition = "none";
     wheel.style.transform = `rotate(${currentRotation}deg)`;
@@ -83,146 +139,22 @@ function spinBeerWheel(button) {
         currentRotation + initialRotation
       )}deg)`;
     });
-
-    isBeerSpinning = false;
+    state.isSpinning = false;
     button.textContent = "SPIN";
   }
 }
 
-function spinFoodWheel(button) {
-  const wheel = document.querySelectorAll(".roulette-wheel__circle")[1]; // Друге колесо
-  const items = wheel.querySelectorAll(".roulette-wheel__item");
+renderWheel(beerData, ".roulette-wheel__left");
+renderWheel(foodData, ".roulette-wheel__right");
 
-  if (!isFoodSpinning) {
-    // Почати обертання
-    const randomDeg = Math.floor(Math.random() * 360) + 3600;
-    foodRotation += randomDeg;
-
-    wheel.style.transition = "transform 5s ease-out";
-    wheel.style.transform = `rotate(${foodRotation}deg)`;
-
-    items.forEach((item) => {
-      const textElement = item.querySelector(
-        ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
-      );
-
-      const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
-      const initialRotation =
-        rotateMatch && rotateMatch[1] ? parseFloat(rotateMatch[1]) : 0;
-
-      textElement.style.transition = "transform 5s ease-out";
-      textElement.style.transform = `rotate(${-(
-        foodRotation + initialRotation
-      )}deg)`;
-    });
-
-    isFoodSpinning = true;
-    button.textContent = "STOP";
-
-    foodSpinTimeout = setTimeout(() => {
-      isFoodSpinning = false;
-      button.textContent = "SPIN";
-    }, 5_000);
-  } else {
-    // Зупинити обертання
-    const computedStyle = getComputedStyle(wheel);
-    const matrix = new DOMMatrix(computedStyle.transform);
-    const currentRotation = Math.atan2(matrix.b, matrix.a) * (180 / Math.PI);
-    foodRotation = currentRotation;
-
-    clearTimeout(foodSpinTimeout);
-
-    wheel.style.transition = "none";
-    wheel.style.transform = `rotate(${currentRotation}deg)`;
-
-    items.forEach((item) => {
-      const textElement = item.querySelector(
-        ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
-      );
-
-      const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
-      const initialRotation =
-        rotateMatch && rotateMatch[1] ? parseFloat(rotateMatch[1]) : 0;
-
-      textElement.style.transition = "none";
-      textElement.style.transform = `rotate(${-(
-        currentRotation + initialRotation
-      )}deg)`;
-    });
-
-    isFoodSpinning = false;
-    button.textContent = "SPIN";
-  }
-}
-
-
-// // імпортую методи(функції) сюди, бо динамічний імпорт не додає їх у глобальну область видимості (тобто вони не доступні через onclick в HTML).
-// const beerButton = document.querySelector(".button_center_beer"); // Знайдіть кнопку
-// beerButton.addEventListener("click", async () => {
-//     const module = await import("./menu.random.js");
-//     module.spinBeerWheel(beerButton); // Виклик функції з модуля
-// });
-
-// const foodButton = document.querySelector(".button_center_food"); // Знайдіть кнопку
-// foodButton.addEventListener("click", async () => {
-//     const module = await import("./menu.random.js");
-//     module.spinFoodWheel(foodButton); // Виклик функції з модуля
-// });
-
-// тут рулетка просто крутиться  й зупиняється аж через 5 секунд, й якщо натиснути ще раз поки вона крутиться то розженеться
-// ще швидше але різко зупиниться коли пройте 5 секунд.
-
-//   let beerRotation = 0;
-//   let foodRotation = 0;
-
-//   function spinBeerWheel() {
-//     const wheel = document.querySelectorAll(".roulette-wheel__circle")[0];
-//     const items = wheel.querySelectorAll(".roulette-wheel__item");
-//     const randomDeg = Math.floor(Math.random() * 360) + 3600;
-//     beerRotation += randomDeg;
-
-//     wheel.style.transition = "transform 5s ease-out";
-//     wheel.style.transform = `rotate(${beerRotation}deg)`;
-
-//     items.forEach((item) => {
-//       const textElement = item.querySelector(
-//         ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
-//       );
-
-//       const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
-//       const initialRotation =
-//         rotateMatch && rotateMatch[1] ? parseFloat(rotateMatch[1]) : 0;
-
-//       textElement.style.transition = "transform 5s ease-out";
-//       textElement.style.transform = `rotate(${-(
-//         beerRotation + initialRotation
-//       )}deg)`;
-//     });
-//   }
-
-//   function spinFoodWheel() {
-
-//     const wheel = document.querySelectorAll(".roulette-wheel__circle")[1];
-//     const items = wheel.querySelectorAll(".roulette-wheel__item");
-//     const randomDeg = Math.floor(Math.random() * 360) + 3600;
-//     foodRotation += randomDeg;
-
-//     wheel.style.transition = "transform 5s ease-out";
-//     wheel.style.transform = `rotate(${foodRotation}deg)`;
-
-//     items.forEach((item) => {
-//       const textElement = item.querySelector(
-//         ".roulette-wheel__item-text-dark-side, .roulette-wheel__item-text-orange-side"
-//       );
-
-//       const rotateMatch = item.style.transform.match(/rotate\(([^)]+)deg\)/);
-//       const initialRotation =
-//         rotateMatch && rotateMatch[1] ? parseFloat(rotateMatch[1]) : 0;
-
-//       textElement.style.transition = "transform 5s ease-out";
-//       textElement.style.transform = `rotate(${-(
-//         foodRotation + initialRotation
-//       )}deg)`;
-//     });
-
-//   }
+// Прив'язуємо кнопки
+document
+  .querySelector(".button-center__left")
+  ?.addEventListener("click", () => {
+    spinWheel("beer");
+  });
+document
+  .querySelector(".button-center__right")
+  ?.addEventListener("click", () => {
+    spinWheel("food");
+  });
