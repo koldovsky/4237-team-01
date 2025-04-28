@@ -31,7 +31,7 @@ menuLinks.forEach((link) => {
 // івент для посилання якоря, щоб працював з будь якої .html
 window.addEventListener("load", () => {
   const hash = window.location.hash;
-  if (hash) {
+  if (hash) { //символ # шукатиме, якщо він є, то скролить до нього 
     const target = document.querySelector(hash);
     if (target) {
       setTimeout(() => {
