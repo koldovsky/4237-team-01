@@ -1,3 +1,63 @@
+function renderWheel(wheelData, containerClass) {
+  let wheelHTML = "";
+
+  wheelHTML += `
+    <div class="roulette-wheel__circle${containerClass.includes("left") ? "__left" : "__right"
+    }">
+      <div class="roulette-wheel__item-orange" style="transform: rotate(22.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(67.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(112.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(157.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(202.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(247.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-orange" style="transform: rotate(292.5deg) skew(45deg)"></div>
+      <div class="roulette-wheel__item-dark" style="transform: rotate(337.5deg) skew(45deg)"></div>
+  `;
+
+  const numItems = wheelData.length;
+  const angleIncrement = 360 / numItems;
+
+  wheelData.forEach((item, index) => {
+    const rotation = index * angleIncrement;
+    wheelHTML += `
+      <div class="roulette-wheel__item" style="transform: translate(-50%, -50%) rotate(${rotation}deg)">
+        <div class="roulette-wheel__item-text${index % 2 === 0 ? "-dark" : "-orange"
+      }-side" style="transform: rotate(-${rotation}deg)">
+          ${item}
+        </div>
+      </div>
+    `;
+  });
+
+  wheelHTML += `</div>`;
+
+  const wheelContainer = document.querySelector(containerClass);
+
+  wheelHTML += wheelContainer.innerHTML;
+  wheelContainer.innerHTML = wheelHTML;
+}
+
+const beerData = [
+  "Blue<br />Style",
+  "Boutique<br />IPA",
+  "Indian<br />Pale Ale",
+  "Lager<br />Beer",
+  "Belgian<br />Dream",
+  "Bitter",
+  "Stout",
+  "Caramel<br />Ale",
+];
+
+const foodData = [
+  "Spicy <br />Nachos",
+  "Beef <br />King",
+  "Chicekn<br />burger",
+  "Classic<br />Burger",
+  "Lamb <br />Gyro",
+  "Lamb <br />Chops",
+  "Fish <br />& <br />Chips",
+  "Chiken <br />Wrap",
+];
 
 // Стани для обох коліс
 let wheelStates = {
@@ -79,17 +139,22 @@ function spinWheel(type) {
         currentRotation + initialRotation
       )}deg)`;
     });
-
     state.isSpinning = false;
     button.textContent = "SPIN";
   }
 }
 
-// Прив'язуємо кнопки
-document.querySelector(".button-center__left")?.addEventListener("click", () => {
-  spinWheel("beer");
-});
+renderWheel(beerData, ".roulette-wheel__left");
+renderWheel(foodData, ".roulette-wheel__right");
 
-document.querySelector(".button-center__right")?.addEventListener("click", () => {
-  spinWheel("food");
-});
+// Прив'язуємо кнопки
+document
+  .querySelector(".button-center__left")
+  ?.addEventListener("click", () => {
+    spinWheel("beer");
+  });
+document
+  .querySelector(".button-center__right")
+  ?.addEventListener("click", () => {
+    spinWheel("food");
+  });
