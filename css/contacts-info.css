@@ -2,6 +2,7 @@
     .contacts__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
 
         @media (max-width: 640px) {
             grid-template-columns: 1fr;
@@ -10,12 +11,12 @@
 
     .contacts__item {
         display: flex;
-        flex: 1;
-        flex-direction: row;
         align-items: center;
 
         .contacts_icon_box {
+            display: flex;
             align-items: center;
+            justify-content: center;
             background-color: var(--color-background-secondary);
             border-radius: 50px;
             background-size: auto;
@@ -33,14 +34,12 @@
 
         .contacts__label {
             color: var(--color-on-primary);
-            display: block;
             font-size: 26px;
             font-family: var(--teko-font);
         }
 
         .contacts__text {
             color: var(--color-text-body);
-            display: block;
             font-size: 17px;
         }
     }
