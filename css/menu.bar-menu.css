@@ -69,3 +69,12 @@
     gap: 10px;
 }
 
+.container {
+   max-width: 1200; 
+   margin: auto;
+}
+
+.col-md-6{
+    padding-left: 30px;
+    padding-right: 30px;
+}
