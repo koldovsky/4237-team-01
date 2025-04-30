@@ -1,6 +1,9 @@
+import("./map-init.js");
+
 function init() {
     import("./global.header-burger.js");
     import("./index.beer-carousel.js");
+
 }
 
 const totalPartials = document.querySelectorAll(
