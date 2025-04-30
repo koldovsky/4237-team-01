@@ -49,7 +49,6 @@ function initMap() {
       }
     ]
   });
-  
 
   new google.maps.Marker({
     position: { lat: 40.7362, lng: -73.9900 },
@@ -57,5 +56,6 @@ function initMap() {
     title: "55 Irving Pl, New York, NY"
   });
 }
-initMap();
+window.initMap = initMap;
+/*initMap();*/
 
