@@ -160,6 +160,7 @@
                 .beer-carousel__card-description {
                     padding: 47px 27px;
                     min-width: 50%;
+                    max-height: 420px;
 
                     @media (min-width:768px) {
                         padding: 58px 28px;
