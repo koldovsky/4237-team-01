@@ -67,7 +67,15 @@
    margin: auto;
 }
 
-.col-md-6{
+.col-md-6 {
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.food-menu__item-separator {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    flex-grow: 1;
 }
