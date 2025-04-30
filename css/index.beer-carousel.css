@@ -48,6 +48,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
+            transition: transform 0.2s ease;
 
             @media (min-width: 768px) {
                 width: 34px;
@@ -76,9 +77,14 @@
             }
 
             .beer-carousel__button-svg:hover {
+                transform: scale(1.1);
                 @media (min-width: 1200px) {
                     fill: var(--color-slider-button-hover);
                 }
+            }
+
+            .beer-carousel__button-svg:active {
+                transform: scale(0.9);
             }
         }
 
