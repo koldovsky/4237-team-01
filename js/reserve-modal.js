@@ -1,5 +1,6 @@
-function initReserveModal() {
+console.log('reserve-modal.js loaded');
 
+export default function reserveModal() {
     const form = document.querySelector('.contacts__form-wrapper');
     const modal = document.querySelector('.reservation-modal');
     const closeBtn = document.querySelector('[data-role="close"]');
@@ -8,9 +9,9 @@ function initReserveModal() {
     if (form && modal) {
         console.log('form and modal found');
 
-
         form.addEventListener('submit', (e) => {
             e.preventDefault();
+            console.log('form submitted');
 
             const inputs = form.querySelectorAll('.contacts__input');
             let isValid = true;
@@ -25,6 +26,7 @@ function initReserveModal() {
             });
 
             if (isValid) {
+                console.log('Form is valid, showing modal');
                 modal.classList.add('is-active');
             }
         });
@@ -36,13 +38,10 @@ function initReserveModal() {
         okBtn?.addEventListener('click', () => {
             modal.classList.remove('is-active');
         });
+    } else {
+        console.log('form or modal not found');
     }
 }
 
-document.body.addEventListener('htmx:afterSwap', (e) => {
-    if (e.detail.target.querySelector('.contacts__form-wrapper') ||
-    e.detail.target.querySelector('.reservation-modal')) {
-        initReserveModal();
-    }
-});
+
 

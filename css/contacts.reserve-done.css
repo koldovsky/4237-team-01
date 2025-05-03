@@ -1,11 +1,15 @@
 .reservation-modal {
     display: none;
-    /*display: block;*/
     min-width: 320px;
     margin: 0 auto;
     background-color: var(--color-background);
     width: 344px;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 3px;
 
     .reservation-modal__exit {
         .reservation-modal__exit-button {
