@@ -1,10 +1,10 @@
-import("./map-init.js");
-
 function init() {
     import("./global.header-burger.js");
     import("./index.beer-carousel.js");
     import("./index.latest-posts.js").then((module) => module.default());
     import("./index.friday-deal.js");
+    import("./map-init.js");
+    import("./reserve-modal.js");
 }
 
 const totalPartials = document.querySelectorAll(

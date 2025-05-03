@@ -56,6 +56,10 @@
             .contacts__input::placeholder {
                 color: var(--color-background-form);
             }
+
+            .input-error {
+                border: 2px solid var(--color-slider-button);
+            }
         }
 
         .contacts__buttons {
