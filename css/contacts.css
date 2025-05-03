@@ -3,6 +3,7 @@
 @import"contacts.header-hero.css";
 @import"contacts-info.css";
 @import"contacts-map-form.css";
+@import"contacts.reserve-done.css";
 
 .contacts {
     background-image: var(--background-image-brown);
