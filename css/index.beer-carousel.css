@@ -49,6 +49,7 @@
             align-items: center;
             position: absolute;
             transition: transform 0.2s ease;
+            z-index: 99;
 
             @media (min-width: 768px) {
                 width: 34px;
@@ -111,15 +112,58 @@
             }
         }
 
+        .beer-carousel__dot-indicator-container {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            z-index: 99;
+            left: 43%;
+
+            .beer-carousel__dot-indicator{
+                width: 5px;
+                height: 5px;
+                background-color: var(--color-slider-button);
+                border-radius: 50%;
+                margin: 0 5px;
+                transition: transform 0.2s ease;
+                
+
+                @media (min-width: 768px) {
+                    width: 8px;
+                    height: 8px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .beer-carousel__dot-indicator--active {
+                background-color: var(--color-slider-button-hover);
+                transition: transform 0.2s ease;
+                transform: scale(1.4);
+            }
+
+            .beer-carousel__dot-indicator:hover {
+                background-color: var(--color-slider-button-hover);
+                transform: scale(1.2);
+            }
+        }
+
         .beer-carousel__belt {
-            overflow: hidden;
+            /* overflow: hidden; */
             max-width: 100%;
+            /* width: 400%; */
             display: flex;
             flex-direction: row;
             align-items: stretch;
             min-height: 575px;
             max-height: 700px;
             height: 100%;
+            transition: transform 0.5s ease-in-out;
             /* justify-content: center; */
 
             .beer-carousel__card {
@@ -129,6 +173,7 @@
                 justify-items: stretch;
                 min-width: 100%;
                 max-width: 100%;
+                width: 100%;
                 padding: 0 15px;
 
                 @media (min-width: 768px) {
