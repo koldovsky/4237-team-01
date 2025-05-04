@@ -1,58 +1,81 @@
 .food-menu {
-    background-color: #150e0e;
-    padding-top: 30px;
-    padding-bottom: 90px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
-    min-width: 320px;
+    background-image: var(--background-primary);
+    padding-top: 120px;
+    padding-bottom: 30px;
+
 }
 .food-menu__subtitle {
     color: var(--color-primary);
     font-family: var(--shadow-into-light-font);
-    font-size: 14px;
+    font-size: 28px;
     text-align: center;
 }
+
 .food-menu__title {
     color: var(--color-on-primary);
     font-family: var(--teko-font);
-    font-size: 40px;
+    font-size: 62px;
     text-align: center;
 }
+
 .food-menu__description {
     color: var(--color-on-section-description);
     font-family: var(--open-sans-serif-font);
     font-size: 19px;
     text-align: center;
 }
+
 .food-menu__category-title {
     color: var(--color-primary);
     font-family: var(--teko-font);
-    font-size: 26px;
+    font-size: 38px;
 }
+
 .food-menu__item-name {
     color: var(--color-on-primary);
     font-family: var(--teko-font);
-    font-size: 26px;
+    font-size: 38px;
+    white-space: nowrap;
 }
-.food-menu__item-price {
-    color: var(--color-primary);
-    font-family: var(--teko-font);
-    font-size: 26px;
-}
+
 .food-menu__item-description {
-    color: var(--color-on-primary);
+    color: var(--color-on-section-description);
     font-family: var(--open-sans-serif-font);
     font-size: 17px;
 }
-.food-menu__category-title,
-.food-menu__item-name {
-    margin-left: 0px;
-    padding-left: 0px;
-    text-align: left;
+
+.food-menu__item-price {
+    color: var(--color-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
 }
+
 .food-menu__list {
-    list-style: none;
-    padding-left: 0px;
-    margin-left: 0px;
+    padding: 0;
+}
+
+
+.food-menu__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container {
+   max-width: 1200; 
+   margin: auto;
+}
+
+.col-md-6 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.food-menu__item-separator {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    flex-grow: 1;
 }

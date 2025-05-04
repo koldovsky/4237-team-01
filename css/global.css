@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
 
 /* header hero */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@492&display=swap');
+
 *,
 *::before,
 *::after {
@@ -25,18 +24,25 @@
     --color-on-primary: #FFFFFF;
     --color-secondary: #F5F5F5;
     --color-on-secondary: #333333;
-    --color-background: #070403;
+    --color-background: #111111;
+    --color-background-secondary: #000000FC;
+    --color-background-tertiary: #0000009c;
+    --color-background-form: #fcfaf8;
+    --color-background-text: #ffffff0a;
     --color-text: #333333;
     --color-text-secondary: #777777;
     --color-text-body: #9d9d9dfc;
     --color-slider-button: #dba620;
     --color-slider-button-hover: #ffc123;
-    --color-background-secondary: #111111;
     --color-on-section-description: #CCCCCC;
     --teko-font: "Teko", sans-serif;
     --shadow-into-light-font: "Shadows Into Light", cursive;
     --open-sans-serif-font: "Open Sans", sans-serif;
 }
+
+body.no-scroll {
+    overflow: hidden;
+  }
 
 img {
     display: block;

@@ -65,7 +65,7 @@
     }
 
     .header__hero {
-        background-size: contain;
+        background-size: cover;
         min-height: 100%;
         padding: 100px 0;
 
