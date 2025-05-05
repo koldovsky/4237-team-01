@@ -1,0 +1,91 @@
+.contacts__map-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .contacts__map {
+        width: 100%;
+        overflow: hidden;
+        max-width: 575px;
+        margin: 0 auto;
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contacts__map-iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+
+            @media (max-width: 768px) {
+                height: 300px;
+            }
+        }
+    }
+
+    .contacts__form-wrapper {
+        background-color: var(--color-background-tertiary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 30px;
+        gap: 15px;
+        max-width: 575px;
+        width: 100%;
+        margin: 0 auto;
+
+        .contacts__input {
+            color: var(--color-background-form);
+            padding: 21px 40px;
+            background-color: var(--color-background-text);
+            border: none;
+            font-size: 16px;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .contacts__input::placeholder {
+            color: var(--color-background-form);
+        }
+
+        .contacts__input.input-error {
+            border: 2px solid var(--color-slider-button);
+        }
+
+        .contacts__buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 12px;
+
+            .contacts__button {
+                flex: 1;
+                padding: 21px 40px;
+                background-color: var(--color-slider-button-hover);
+                color: var(--color-background);
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                text-transform: uppercase;
+                width: 75%;
+                margin: 0 auto;
+
+                .contacts__button--reserve .contacts__button--menu {
+                    background-color: var(--color-slider-button-hover);
+                    color: var(--color-background);
+                }
+            }
+        }
+    }
+}

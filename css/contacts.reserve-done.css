@@ -1,0 +1,92 @@
+.reservation-modal {
+    display: none;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: var(--color-background);
+    width: 344px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 3px;
+
+    .reservation-modal__exit {
+        .reservation-modal__exit-button {
+            background: transparent;
+            border: none;
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            top: 16px;
+            right: 24px;
+            cursor: pointer;
+        }
+
+        .reservation-modal__exit-button::before,
+        .reservation-modal__exit-button::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 16px;
+            height: 2px;
+            background-color: var(--color-on-primary);
+            transform-origin: center;
+        }
+
+        .reservation-modal__exit-button::before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .reservation-modal__exit-button::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    .reservation-modal__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        .reservation-modal__icon-container {
+            margin: 0 auto;
+
+            .reservation-modal__icon {
+                width: 34px;
+                height: 34px;
+                color: var(--color-primary);
+                fill: currentColor;
+                margin: 20px auto;
+            }
+        }
+
+        .reservation-modal__title {
+            font-weight: bold;
+            font-family: var(--teko-font);
+            text-align: center;
+            font-size: 16px;
+            color: var(--color-on-primary);
+            margin: 20px auto 10px auto;
+        }
+
+        .reservation-modal__text {
+            text-align: center;
+            font-size: 14px;
+            color: var(--color-on-primary);
+            margin: 0 auto 20px auto;
+        }
+
+        .reservation-modal__button {
+            width: 50%;
+            margin: 10px auto 30px auto;
+            font-family: var(--teko-font);
+            padding: 5px;
+        }
+    }
+}
+
+.reservation-modal.is-active {
+    display: block;
+}

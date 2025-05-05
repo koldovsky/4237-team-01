@@ -42,51 +42,31 @@
   </div>
 </section>
 
-<section class="team-hiring">
-  <h2 class="team-hiring__title">We are hiring!</h2>
-  <p class="team-hiring__text">
-    We are always looking for communicable waiters and professional
-    bartenders.
-  </p>
-  <a href="contacts.html" class="team-hiring__button">JOIN OUR TEAM</a>
-</section>
-
-<section class="team-video">
-  <h2 class="team-video__title">Beer Boutique</h2>
-  <p class="team-video__subtitle">We are craft beer fans!</p>
-  <a
-    href="https://www.youtube.com/watch?v=-ZU3yx2672g&ab_channel=BudLight"
-    class="team-video__button"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Watch video"
-  >
-    <div class="team-video__w-icon-panel w-icon-panel--x1">
-      <div class="team-video__w-icon-panel_inner">
-        <span class="team-video__iconElement_3D2">
-          <span class="team-video__iconElement_inner_2iN">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 203.967 216.62"
-              height="10%"
-              width="10%"
-            >
-              <polygon
-                stroke="#FFFFFF"
-                stroke-miterlimit="10"
-                points="159.338,104.636 115.632,131.3 71.926,157.963 71.926,104.636 71.926,51.31 115.632,77.973"
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                fill="currentColor"
-                stroke="currentColor"
-                stroke-miterlimit="10"
-                points="139.724,104.636 111.495,121.858 83.267,139.079 83.267,104.636 83.267,70.195 111.495,87.416"
-              ></polygon>
-            </svg>
-          </span>
-        </span>
+<div class="team-hiring-wrapper">
+  <section class="team-hiring">
+    <div class="team-hiring__content">
+      <div class="team-hiring__text">
+        <h2 class="team-hiring__title">We are hiring!</h2>
+        <p class="team-hiring__subtitle">
+          We are always looking for communicable waiters and professional bartenders.
+        </p>
+      </div>
+      <div class="team-hiring__cta">
+        <a href="contacts.html" class="team-hiring__link">JOIN OUR TEAM</a>
       </div>
     </div>
-  </a>
+  </section>
+</div>
+
+
+<section class="team-video">
+  <div class="team-video__overlay">
+    <h2 class="team-video__title">BEER BOUTIQUE</h2>
+    <p class="team-video__subtitle">We are craft beer fans!</p>
+  </div>
+
+  <video class="team-video__player" controls poster="image/about-us/video-about-background.png">
+    <source src="image/about-us/video/beer-boutique-promo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </section>

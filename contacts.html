@@ -1,4 +1,3 @@
-<!-- Alona Zahychenko-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beer Pub</title>
     <link rel="shortcut icon" href="image/beer-tab-logo.png" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/contacts.css"> -->
     <link rel="stylesheet" href="css/index.css">
 
     <script src="https://unpkg.com/htmx.org@1.9.10"
@@ -22,13 +19,13 @@
     <header>
         <nav class="header__nav" data-hx-trigger="load" data-hx-swap="outerHTML"
             data-hx-get="global.header-nav.partial.html" style="background-color: #111111;"></nav>
+        <div class="header__hero-contacts" data-hx-trigger="load" data-hx-swap="outerHTML"
+            data-hx-get="contacts.header-hero.partial.html"></div>
     </header>
-    <!-- End Anastasiia Horiela-->
-    <!-- <header class="header">
-        <a class="header__logo" href="index.html">beer beerboutique</a>
-    </header> -->
+
     <main class="contacts">
-        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.header.partial.html"></div>
+        <!-- End Anastasiia Horiela-->
+        <!-- Alona Zahychenko-->
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.info.partial.html"></div>
         <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.map.form.partial.html"></div>
     </main>
@@ -37,5 +34,14 @@
     <!--Diana Dubenok-->
     <footer class="footer" data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-nav.partial.html">
     </footer>
+    <!-- Alona Zahychenko-->
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.reserve-done.partial.html"></div>
+    <!--<script src="js/map-init.js"></script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqXObrcmp1IXs_aUnTLo459Ny8iJWqRzk" async
+        defer></script>-->
+    <!-- Alona Zahychenko-->
+    <!--Anastasiia Horiela-->
+    <script type="module" src="js/index.js"></script>
+    <!-- End Anastasiia Horiela-->
 </body>
 <!-- End Diana Dubenok-->

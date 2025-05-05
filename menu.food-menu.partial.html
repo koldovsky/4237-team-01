@@ -1,41 +1,474 @@
-    <section class="food-menu">
-        <p class="food-menu__subtitle">Food</p>
-        <h2 class="food-menu__title">FOOD MENU</h2>
-        <p class="food-menu__description">Explore our snacks, burgers, and main dishes.</p>
+<section class="food-menu">
+  <div class="food-menu__container container">
+    <p class="food-menu__subtitle">Food</p>
+    <h2 class="food-menu__title">FOOD MENU</h2>
+    <p class="food-menu__description">
+      Explore our snacks, burgers, and main dishes.
+    </p>
 
-        <div class="food-menu-section food__menu-section--snacks">
-        <h3 class="food-menu-section__title">SNACKS</h3>
-        <ul class="food-menu-list snacks__list">
-            <li class="food-menu-item snacks__item">SPICY NACHOS: Cheddar cheese, jalapenos, queso fresco, sour cream, salsa</li>
-            <li class="food-menu-item snacks__item">FISH & CHIPS: Ale battered cod, coleslaw, French fries, and tartar sauce</li>
-            <li class="food-menu-item snacks__item">FRIED CALAMARI: Fried calamari served with spicy tartar sauce and dill aioli</li>
-            <li class="food-menu-item snacks__item">CHICKEN WRAP: Grilled chicken, bacon, tomato, cucumber, avocado, village sauce</li>
-            <li class="food-menu-item snacks__item">MAC & CHEESE BITES: With maple bacon and cheese sauce</li>
-        </ul>
+    <div id="foodMenuCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <!-- Slide 1: SNACKS + BURGERS -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- SNACKS -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">SNACKS</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">SPICY NACHOS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Cheddar cheese, jalapenos, queso fresco, sour cream,
+                        salsa
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">FISH & CHIPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$12</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Ale battered cod, coleslaw, French fries, and tartar
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">FRIED CALAMARI</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$12</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Fried calamari served with spicy tartar sauce and dill
+                        aioli
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CHICKEN WRAP</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$18</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Grilled chicken, bacon, tomato, cucumber, avocado, village
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">MAC & CHEESE BITES</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$10</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        With maple bacon and cheese sauce
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- BURGERS -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">BURGERS</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CLASSIC BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$14</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Beef, tomato, pickle, lettuce, cucumber, cheddar cheese,
+                        bacon
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">BEEF KING</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$18</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Beef brisket, Swiss cheese, caramelised onion
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">DOUBLE CHEESEBURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$22</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Double beef patties with cheese tomato, topped with
+                        mozzarella
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CHICKEN BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Chicken breast, soaked with hot sauce & blue cheese slaw
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">BOUTIQUE BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$19</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Maple bacon, tomato, red onion topped off with a fried
+                        egg
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="food-menu-section food__menu-section--burgers">
-        <h3 class="food-menu-section-title">BURGERS</h3>
-        <ul>
-            <li class="food-menu-item burgers__item">CLASSIC BURGER: Beef, tomato, pickle, lettuce, cucumber, cheddar cheese, bacon</li>
-            <li class="food-menu-item burgers__item">BEEF KING: Beef brisket, Swiss cheese, caramelised onion</li>
-            <li class="food-menu-item burgers__item">DOUBLE CHEESEBURGER: Double beef patties with cheese tomato, topped with mozzarella</li>
-            <li class="food-menu-item burgers__item">CHICKEN BURGER: Chicken breast, soaked with hot sauce & blue cheese slaw</li>
-            <li class="food-menu-item burgers__item">CHICKEN BURGER: Chicken breast, soaked with hot sauce & blue cheese slaw</li>
-            <li class="food-menu-item burgers__item">BOUTIQUE BURGER: Maple bacon, tomato, red onion topped off with a fried egg</li>
-        </ul>
+        <!-- Slide 2: BURGERS + MEAT -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- BURGERS -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">BURGERS</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CLASSIC BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$14</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Beef, tomato, pickle, lettuce, cucumber, cheddar cheese,
+                        bacon
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">BEEF KING</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$18</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Beef brisket, Swiss cheese, caramelised onion
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">DOUBLE CHEESEBURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$22</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Double beef patties with cheese tomato, topped with
+                        mozzarella
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CHICKEN BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Chicken breast, soaked with hot sauce & blue cheese slaw
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">BOUTIQUE BURGER</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$19</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Maple bacon, tomato, red onion topped off with a fried
+                        egg
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- MEAT -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">MEAT</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">SESAME CHICKEN STRIPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$13</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Chicken breasts in Jack Daniel`s glaze with toasted sesame
+                        seeds
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">HOT WINGS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Served with barbecue sauce and coleslaw
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">LAMB GYRO</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$20</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Lamb, tzatziki sauce, tomato, cucumber & lettuce in pita
+                        bread
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">LAMB CHOPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$22</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Marinated herb roasted rack of lamb chops with balsamic
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">PAN ROASTED PORK CHOP</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$23</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        PAN ROASTED PORK CHOP: Served in a bourbon & honey glaze
+                        with berry sauce
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="food-menu-section food__menu-section--meat">
-        <h3 class="food-menu-item meat__item">MEAT</h3>
-        <ul>
-            <li class="food-menu-item meat__item">SESAME CHICKEN STRIPS: Chicken breasts in Jack Daniel`s glaze with toasted sesame seeds</li>
-            <li class="food-menu-item meat__item">HOT WINGS: Served with barbecue sauce and coleslaw</li>
-            <li class="food-menu-item meat__item">LAMB GYRO: Lamb, tzatziki sauce, tomato, cucumber & lettuce in pita bread</li>
-            <li class="food-menu-item meat__item">LAMB CHOPS: Marinated herb roasted rack of lamb chops with balsamic sauce</li>
-            <li class="food-menu-item meat__item">PAN ROASTED PORK CHOP: Served in a bourbon & honey glaze with berry sauce</li>
-        </ul>
-        </div>
+        <!-- Slide 3: MEAT + SNACKS -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- MEAT -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">MEAT</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">SESAME CHICKEN STRIPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$13</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Chicken breasts in Jack Daniel`s glaze with toasted sesame
+                        seeds
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">HOT WINGS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Served with barbecue sauce and coleslaw
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">LAMB GYRO</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$20</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Lamb, tzatziki sauce, tomato, cucumber & lettuce in pita
+                        bread
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">LAMB CHOPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$22</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Marinated herb roasted rack of lamb chops with balsamic
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">PAN ROASTED PORK CHOP</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$23</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        PAN ROASTED PORK CHOP: Served in a bourbon & honey glaze
+                        with berry sauce
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-    </section>
-    
+            <!-- SNACKS -->
+            <div class="col-md-6">
+              <div class="food-menu__column">
+                <h3 class="food-menu__category-title">SNACKS</h3>
+                <ul class="food-menu__list">
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">SPICY NACHOS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$15</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Cheddar cheese, jalapenos, queso fresco, sour cream,
+                        salsa
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">FISH & CHIPS</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$12</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Ale battered cod, coleslaw, French fries, and tartar
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">FRIED CALAMARI</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$12</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Fried calamari served with spicy tartar sauce and dill
+                        aioli
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">CHICKEN WRAP</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$18</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        Grilled chicken, bacon, tomato, cucumber, avocado, village
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="food-menu__item">
+                    <div class="food-menu__item-header-wrap">
+                      <div class="food-menu__item-header">
+                        <span class="food-menu__item-name">MAC & CHEESE BITES</span>
+                        <div class="food-menu__item-separator"></div>
+                        <span class="food-menu__item-price">$10</span>
+                      </div>
+                      <p class="food-menu__item-description">
+                        With maple bacon and cheese sauce
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#foodMenuCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#foodMenuCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
