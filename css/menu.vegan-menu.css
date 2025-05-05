@@ -1,3 +1,10 @@
+.vegan-menu{
+    background-image: var(--background-primary);
+    padding-top:  120px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+} 
 .vegan-menu__item-header {
     display: flex;
     justify-content: space-between;
