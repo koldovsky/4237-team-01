@@ -5,7 +5,7 @@ function init() {
     import("./index.beer-carousel.js");
     import("./index.latest-posts.js").then((module) => module.default());
     import("./index.friday-deal.js");
-    //import("./reserve-modal.js");
+    import("./contacts.reserve-form.js");
 }
 
 document.body.addEventListener('htmx:afterSwap', (e) => {
