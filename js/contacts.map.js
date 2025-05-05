@@ -56,6 +56,6 @@ function initMap() {
     title: "55 Irving Pl, New York, NY"
   });
 }
-window.initMap = initMap;
-/*initMap();*/
+/*window.initMap = initMap;*/
+initMap();
 

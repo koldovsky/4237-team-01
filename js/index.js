@@ -6,14 +6,12 @@ function init() {
     import("./index.latest-posts.js").then((module) => module.default());
     import("./index.friday-deal.js");
     import("./contacts.reserve-form.js");
+    import("./contacts.map.js");
 }
 
 document.body.addEventListener('htmx:afterSwap', (e) => {
-    console.log('htmx:afterSwap triggered');
     const form = document.querySelector('.contacts__form-wrapper');
     const modal = document.querySelector('.reservation-modal');
-    console.log('Form found:', form);
-    console.log('Modal found:', modal);
 
     if (form || modal) {
         reserveModal();
