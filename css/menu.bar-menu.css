@@ -70,11 +70,30 @@
 }
 
 .container {
-   max-width: 1200; 
+   max-width: 1200px; 
    margin: auto;
 }
 
 .col-md-6{
     padding-left: 30px;
     padding-right: 30px;
+}
+
+#barMenuCarousel {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5rem; /* або більше, щоб збільшити зону кліку */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -3rem; /* або -5rem чи більше, якщо хочеш ще лівіше */
+}
+
+.carousel-control-next {
+  right: -3rem; /* аналогічно, для правої кнопки */
 }
