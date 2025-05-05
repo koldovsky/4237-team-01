@@ -12,9 +12,13 @@ function init() {
 document.body.addEventListener('htmx:afterSwap', (e) => {
     const form = document.querySelector('.contacts__form-wrapper');
     const modal = document.querySelector('.reservation-modal');
+    const map = document.querySelector('#map');
 
     if (form || modal) {
         reserveModal();
+    } 
+    if (map && typeof window.initMap === 'function') {
+        window.initMap();
     }
 });
 
