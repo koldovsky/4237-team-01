@@ -50,7 +50,7 @@ function initMap() {
     ]
   });
 
-  const marker = new google.maps.Marker({
+  new google.maps.Marker({
     position: { lat: 40.7362, lng: -73.9900 },
     map: map,
     title: "55 Irving Pl, New York, NY"
