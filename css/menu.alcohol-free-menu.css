@@ -28,6 +28,20 @@
     padding-top: 30px;
 }
 
+@media (max-width: 768px) {
+    .alcohol-free-menu__categories {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .vegan-menu__category {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
 .alcohol-free-menu__title {
     color: var(--color-primary);
     font-family: var(--shadow-into-light-font);
