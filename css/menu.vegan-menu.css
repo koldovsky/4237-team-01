@@ -6,7 +6,7 @@
     padding-right: 0px;
 }
 
-.vegan-menu__categories{
+.vegan-menu__category {
     @media (max-width: 768px) {
         .vegan-menu__categories {
             flex-direction: column;
@@ -37,35 +37,35 @@
     padding-top: 30px;
 }
 
-    .vegan-menu__title {
-        color: var(--color-primary);
-        font-family: var(--shadow-into-light-font);
-        font-size: 28px;
-        text-align: center;
-    }
+.vegan-menu__title {
+    color: var(--color-primary);
+    font-family: var(--shadow-into-light-font);
+    font-size: 28px;
+    text-align: center;
+}
 
-    .vegan-menu__subtitle {
-        color: var(--color-on-section-description);
-        font-family: var(--open-sans-serif-font);
-        font-size: 19px;
-        text-align: center;
-    }
+.vegan-menu__subtitle {
+    color: var(--color-on-section-description);
+    font-family: var(--open-sans-serif-font);
+    font-size: 19px;
+    text-align: center;
+}
 
-    .vegan-menu__category-title,
-    .vegan-menu__item-price {
-        color: var(--color-primary);
-        font-family: var(--teko-font);
-        font-size: 38px;
-    }
+.vegan-menu__category-title,
+.vegan-menu__item-price {
+    color: var(--color-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
+}
 
-    .vegan-menu__item-title {
-        color: var(--color-on-primary);
-        font-family: var(--teko-font);
-        font-size: 38px;
-    }
+.vegan-menu__item-title {
+    color: var(--color-on-primary);
+    font-family: var(--teko-font);
+    font-size: 38px;
+}
 
-    .vegan-menu__item-description {
-        color: var(--color-text-body);
-        font-family: var(--open-sans-serif-font);
-        font-size: 17px;
-    }
+.vegan-menu__item-description {
+    color: var(--color-text-body);
+    font-family: var(--open-sans-serif-font);
+    font-size: 17px;
+}
