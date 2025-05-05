@@ -6,13 +6,16 @@
     padding-right: 0px;
 }
 
-.vegan-menu__category {
-    @media (max-width: 768px) {
-        .vegan-menu__categories {
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
+@media (max-width: 768px) {
+    .vegan-menu__categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .vegan-menu__category {
+        width: 100%;
+        max-width: 500px;
     }
 }
 
