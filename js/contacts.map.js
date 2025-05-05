@@ -1,5 +1,5 @@
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
+  const map = new google.maps.marker.AdvancedMarkerElement(document.getElementById("map"), {
     center: { lat: 40.7362, lng: -73.9900 },
     zoom: 14,
     styles: [
