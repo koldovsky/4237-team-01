@@ -1,9 +1,3 @@
-.vegan-menu {
-    background-color: #1a1a1a; /* match your site's dark theme */
-    margin: 0;
-    padding: 0;
-  }
-
 .vegan-menu__item-header {
     display: flex;
     justify-content: space-between;
