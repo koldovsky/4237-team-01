@@ -125,12 +125,13 @@ function renderCarousel() {
   }
   
   let currentSlide = 0;
-  
+  let numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+
   function updateCarouselPosition() {
     let offsetDivider = window.innerWidth <= 768 ? 1 : 2;
     const offset = -currentSlide * (100 / offsetDivider);
     beerCarouselBelt ? beerCarouselBelt.style.transform = `translateX(${offset}%)` : null;
-    for (let i = 0; i < beerCardsContent.length; i++) {
+    for (let i = 0; i < numOfSliderMoves; i++) {
         if (i === currentSlide) {
             document.querySelector(`#dot${i}`)?.classList.add('beer-carousel__dot-indicator--active');
         } else {
@@ -140,12 +141,12 @@ function renderCarousel() {
   }
   
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % beerCardsContent.length;
+    currentSlide = (currentSlide + 1) % numOfSliderMoves;
     updateCarouselPosition();
   }
   
   function prevSlide() {
-    currentSlide = (currentSlide - 1 + beerCardsContent.length) % beerCardsContent.length;
+    currentSlide = (currentSlide - 1 + numOfSliderMoves) % numOfSliderMoves;
     updateCarouselPosition();
   }
   
@@ -156,3 +157,6 @@ function renderCarousel() {
   
 
     window.addEventListener('resize', renderCarousel);
+    window.addEventListener('resize', () => {
+        numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+    })
