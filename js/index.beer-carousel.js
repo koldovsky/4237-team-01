@@ -37,58 +37,10 @@ const beerCardsContent = [
     }
 ];
 
-// function renderBeerCards(content) {
-//     let beerCardsHTML = [];
-//     for (let card of content) {
-//         beerCardsHTML.push(`
-//             <div class="beer-carousel__card">
-//                 <div class="beer-carousel__card-img-wrap">
-//                     <img height="300" class="beer-carousel__card-img" src="${card.image}" alt="${card.name} beer bottle">
-//                 </div>
-//                 <div class="beer-carousel__card-description">
-//                     <p class="beer-carousel__card-name">${card.name}</p>
-//                     <p class="beer-carousel__card-recommendation">${card.recommendation}</p>
-//                     <p class="beer-carousel__card-abv">${card.abv}</p>
-//                     <p class="beer-carousel__card-ibu">${card.ibu}</p>
-//                     <p class="beer-carousel__card-flavour">${card.flavour}</p>
-//                 </div>
-//             </div>`);
-//     }
-//     return beerCardsHTML;
-//     // const beerCarouselBelt = document.querySelector(".beer-carousel__belt");
-//     // beerCarouselBelt.innerHTML = beerCardsHTML;
-// }
-
-// const beerCardsSlides = renderBeerCards(beerCardsContent);
-// let currentSlide = 0;
-// const totalSlides = beerCardsSlides.length;
-
-// function renderCarousel() {
-//     const beerCarouselBelt = document.querySelector(".beer-carousel__belt");
-//     beerCarouselBelt.innerHTML = beerCardsSlides[currentSlide];
-//     const secondSlide = (currentSlide + 1) % totalSlides;
-//     beerCarouselBelt.innerHTML += beerCardsSlides[secondSlide];
-
-// }
-
-// function nextSlide() {
-//     currentSlide = (currentSlide + 1) % totalSlides;
-//     renderCarousel();
-// }
-
-// function prevSlide() {
-//     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-//     renderCarousel();
-// }
-
-// const nextButton = document.querySelector(".beer-carousel__button--next");
-// const prevButton = document.querySelector(".beer-carousel__button--prev");
-// nextButton.addEventListener("click", nextSlide);
-// prevButton.addEventListener("click", prevSlide);
-
-// renderCarousel();
-
 const beerCarouselBelt = document.querySelector(".beer-carousel__belt");
+
+// Need to fix rendering of dots for 768+px screens
+// Need to fix sliding on 768 px screens
 
 function renderBeerCards(content) {
     return content.map(card => `
@@ -112,22 +64,22 @@ function renderCarousel() {
 
     beerCarouselBelt ? beerCarouselBelt.innerHTML = renderBeerCards(beerCardsContent) : null;
     dotIndicatorsContainer ? dotIndicatorsContainer.innerHTML = beerCardsContent.map((_, index) => `<div class="beer-carousel__dot-indicator" id="dot${index}"></div>`).join('') : null;
-  
+
     // Динамічно встановлюємо ширину belt
     beerCarouselBelt ? beerCarouselBelt.style.width = `${beerCardsContent.length * 100}%` : null;
-  
+
     // І кожному слайду ширину відносно каруселі
     document.querySelectorAll('.beer-carousel__card')?.forEach(card => {
-      card.style.width = `${100 / beerCardsContent.length}%`;
+        card.style.width = `${100 / beerCardsContent.length}%`;
     });
-  
-    updateCarouselPosition();
-  }
-  
-  let currentSlide = 0;
-  let numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
 
-  function updateCarouselPosition() {
+    updateCarouselPosition();
+}
+
+let currentSlide = 0;
+let numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+
+function updateCarouselPosition() {
     let offsetDivider = window.innerWidth <= 768 ? 1 : 2;
     const offset = -currentSlide * (100 / offsetDivider);
     beerCarouselBelt ? beerCarouselBelt.style.transform = `translateX(${offset}%)` : null;
@@ -138,25 +90,25 @@ function renderCarousel() {
             document.querySelector(`#dot${i}`)?.classList.remove('beer-carousel__dot-indicator--active');
         }
     }
-  }
-  
-  function nextSlide() {
+}
+
+function nextSlide() {
     currentSlide = (currentSlide + 1) % numOfSliderMoves;
     updateCarouselPosition();
-  }
-  
-  function prevSlide() {
+}
+
+function prevSlide() {
     currentSlide = (currentSlide - 1 + numOfSliderMoves) % numOfSliderMoves;
     updateCarouselPosition();
-  }
-  
-  document.querySelector(".beer-carousel__button--next")?.addEventListener("click", nextSlide);
-  document.querySelector(".beer-carousel__button--prev")?.addEventListener("click", prevSlide);
-  
-  renderCarousel();
-  
+}
 
-    window.addEventListener('resize', renderCarousel);
-    window.addEventListener('resize', () => {
-        numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
-    })
+document.querySelector(".beer-carousel__button--next")?.addEventListener("click", nextSlide);
+document.querySelector(".beer-carousel__button--prev")?.addEventListener("click", prevSlide);
+
+renderCarousel();
+
+
+window.addEventListener('resize', renderCarousel);
+window.addEventListener('resize', () => {
+    numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+})
