@@ -1,3 +1,4 @@
+//Alona Zahychenko
 function initMap() {
   const mapElement = document.querySelector('.contacts__map-api');
   const fallbackIframe = document.querySelector('.contacts__map-fallback');

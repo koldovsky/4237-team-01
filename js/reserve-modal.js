@@ -1,3 +1,4 @@
+//Alona Zahychenko
 export default function reserveModal() {
     const form = document.querySelector('.contacts__form-wrapper');
     const modal = document.querySelector('.reservation-modal');

@@ -1,3 +1,4 @@
+//Alona Zahychenko
 const form = document.querySelector(".contacts__form-wrapper");
 
 async function handleSubmit(event) {
