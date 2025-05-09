@@ -78,7 +78,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    transition: height 1s;
     z-index: 10000;
     gap: 13px;
   }
@@ -162,6 +161,10 @@
       box-shadow: none;
       z-index: 0;
     }
+    .header__nav.is-open {
+        height: 120px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
   
     .header__burger-menu {
       display: none;
