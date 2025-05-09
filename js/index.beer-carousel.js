@@ -39,9 +39,6 @@ const beerCardsContent = [
 
 const beerCarouselBelt = document.querySelector(".beer-carousel__belt");
 
-// Need to fix rendering of dots for 768+px screens
-// Need to fix sliding on 768 px screens
-
 function renderBeerCards(content) {
     return content.map(card => `
         <div class="beer-carousel__card">
@@ -59,11 +56,17 @@ function renderBeerCards(content) {
 }
 
 const dotIndicatorsContainer = document.querySelector('.beer-carousel__dot-indicator-container');
+let numOfDots = window.innerWidth < 768 ? beerCardsContent.length : beerCardsContent.length - 1;
 
 function renderCarousel() {
 
     beerCarouselBelt ? beerCarouselBelt.innerHTML = renderBeerCards(beerCardsContent) : null;
-    dotIndicatorsContainer ? dotIndicatorsContainer.innerHTML = beerCardsContent.map((_, index) => `<div class="beer-carousel__dot-indicator" id="dot${index}"></div>`).join('') : null;
+    if (dotIndicatorsContainer) {
+        dotIndicatorsContainer.innerHTML = '';
+        for (let i = 0; i < numOfDots; i++) {
+            dotIndicatorsContainer.innerHTML += `<div class="beer-carousel__dot-indicator" id="dot${i}"></div>`;
+        }
+    }
 
     // Динамічно встановлюємо ширину belt
     beerCarouselBelt ? beerCarouselBelt.style.width = `${beerCardsContent.length * 100}%` : null;
@@ -77,10 +80,10 @@ function renderCarousel() {
 }
 
 let currentSlide = 0;
-let numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+let numOfSliderMoves = window.innerWidth < 768 ? beerCardsContent.length : beerCardsContent.length - 1;
 
 function updateCarouselPosition() {
-    let offsetDivider = window.innerWidth <= 768 ? 1 : 2;
+    let offsetDivider = window.innerWidth < 768 ? 1 : 2;
     const offset = -currentSlide * (100 / offsetDivider);
     beerCarouselBelt ? beerCarouselBelt.style.transform = `translateX(${offset}%)` : null;
     for (let i = 0; i < numOfSliderMoves; i++) {
@@ -110,5 +113,6 @@ renderCarousel();
 
 window.addEventListener('resize', renderCarousel);
 window.addEventListener('resize', () => {
-    numOfSliderMoves = window.innerWidth <= 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+    numOfSliderMoves = window.innerWidth < 768 ? beerCardsContent.length : beerCardsContent.length - 1;
+    numOfDots = window.innerWidth < 768 ? beerCardsContent.length : beerCardsContent.length - 1;
 })
