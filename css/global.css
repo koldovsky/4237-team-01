@@ -60,7 +60,7 @@ button {
 .container {
     max-width: 1200px;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .section-title {
